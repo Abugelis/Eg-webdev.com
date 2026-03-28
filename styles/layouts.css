@@ -1,0 +1,235 @@
+/* ----------------- HEADER -------------------- */
+
+header {
+    width: 100%;
+    background: transparent;
+    backdrop-filter: none;
+    color: var(--color-accent-primary);
+    padding: 1rem var(--container-padding);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    z-index: 100;
+}
+
+header.scrolled {
+    background: var(--color-glass-light);
+    backdrop-filter: blur(12px);
+}
+
+/* Logo */
+header img {
+    height: var(--logo-size);
+    width: var(--logo-size);
+    object-fit: contain;
+}
+
+/* ---------------- NAV ---------------- */
+header nav {
+    display: flex;
+}
+
+/* NAV LIST */
+header nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+/* LINKS */
+header a {
+    color: var(--color-accent-primary);
+    font-weight: var(--font-weight-medium);
+    text-decoration: none;
+    transition: color var(--transition-medium);
+}
+
+header.scrolled {
+    padding: 0.5rem var(--container-padding);
+    backdrop-filter: blur(12px);
+}
+
+header a:hover,
+header a:focus {
+    color: var(--color-accent-secondary);
+}
+
+#navMenu a.active {
+    color: var(--color-accent-secondary);
+}
+
+/* ---------------- HAMBURGER BUTTON ---------------- */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.nav-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-text);
+    display: block;
+    transition: var(--transition-medium);
+}
+
+/* ACTIVE STATE (hamburger → X) */
+.nav-toggle.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.nav-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-toggle {
+    position: relative;
+    z-index: 110; /* higher than nav */
+}
+
+/* ---------------- OVERLAY ---------------- */
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.5);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity var(--transition-medium), visibility var(--transition-medium);
+
+    z-index: 90;
+}
+
+/* Active overlay */
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ---------------- MOBILE MENU ---------------- */
+@media (max-width: 767px) {
+
+    /* Stack header */
+    header {
+        flex-direction: row;
+        position: fixed;
+        top: 0;
+        
+    }
+
+    /* Remove all active/hover/focus highlight from submenu links on mobile */
+    #navMenu .submenu a,
+    #navMenu .submenu a:active,
+    #navMenu .submenu a:focus,
+    #navMenu .submenu a:hover {
+        color: inherit;       /* keep text color same as normal */
+        background: none;     /* remove background highlight */
+        transition: none;     /* disable transition easing */
+    }
+
+    /* Show hamburger */
+    .nav-toggle {
+        display: flex;
+    }
+
+    /* NAV PANEL */
+    header nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+
+        height: 100vh;
+        width: 75%;
+        max-width: 300px;
+
+        background-color: var(--color-glass-medium);
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        transform: translateX(100%);
+        transition: transform var(--transition-medium);
+
+        box-shadow: -5px 0 15px rgba(0,0,0,0.2);
+
+        z-index: 100;
+    }
+
+    /* ACTIVE STATE */
+    header nav.active {
+        transform: translateX(0);
+    }
+
+    /* Vertical nav */
+    header nav ul {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .no-scroll {
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+    }
+}
+
+/* ---------------------------- NAV (LAPTOP & DESKTOP) ------------------------------- */
+@media (min-width: 768px) {
+
+    header {
+        top: 0;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+    }
+
+    nav ul li a {
+        position: relative;
+        text-decoration: none;
+        color: inherit;
+        padding: 0.25rem 0;
+    }
+
+    /* underline */
+    nav ul li a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 100%;
+        height: 2px;
+        background: currentColor;
+
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: transform 0.3s ease;
+    }
+
+    /* hover */
+    nav ul li a:hover::after {
+        transform: scaleX(1);
+    }
+
+    nav ul li a.active::after {
+        transform: scaleX(1);
+    }
+}

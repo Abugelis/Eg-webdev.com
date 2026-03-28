@@ -1,0 +1,354 @@
+
+/* ----------------------------------------------------------- HERO ---------------------------------------------------------- */
+
+.hero-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem; /* 👈 spacing between text + mockups */
+
+    background: var(--gradient-primary);
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+}
+
+/* -------------SECTION DIVIDER ------------*/
+
+.section-separator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    line-height: 0; /* removes weird spacing */
+}
+
+.section-separator svg {
+    display: block;
+    width: 100%;
+    height: 300px; /* adjust this */
+}
+
+/* ------------------------ Content -------------------------- */
+
+.hero-content {
+    z-index: 5;
+    max-width: 600px;
+}
+
+.hero-content p {
+    margin-bottom: 2rem;
+}
+
+
+
+/* ------------------------ Mockups -------------------------- */
+
+.mockup-stack {
+    position: relative; /* 👈 IMPORTANT: keep in layout */
+    width: 100%;
+    max-width: 600px;
+    height: 400px; /* 👈 FIXED: enough space for cards */
+    transform: none; /* 👈 reset shift on mobile */
+
+    perspective: 1200px;
+    transform: translateX(-40px); /* 👈 pulls cards inward */
+    flex-shrink: 0;
+    isolation: isolate;
+}
+
+/* Base card */
+.mockup {
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+
+    border-radius: 12px;
+    overflow: hidden;
+
+    background: var(--color-glass-light);
+    backdrop-filter: blur(8px);
+
+    box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+
+    transform-style: preserve-3d;
+    will-change: transform;
+    backface-visibility: hidden;
+
+    transition: transform var(--transition-medium),
+                opacity var(--transition-medium);
+}
+
+.mockup img {
+    width: 100%;
+    display: block;
+}
+
+/* ------------------------ Card Positions -------------------------- */
+
+/* BACK */
+.card-4 {
+    top: 10px;
+    left: 100px;
+
+    transform:
+        rotateY(-20deg)
+        rotateX(12deg)
+        rotateZ(12deg)
+        scale(0.9);
+
+    opacity: 0.35;
+    filter: blur(2px);
+    z-index: 1;
+}
+
+/* MID BACK */
+.card-3 {
+    top: 50px;
+    left: 0px;
+
+    transform:
+        rotateY(-18deg)
+        rotateX(10deg)
+        rotateZ(12deg)
+        scale(0.95);
+
+    opacity: 0.55;
+    filter: blur(1px);
+    z-index: 2;
+}
+
+/* MID FRONT */
+.card-2 {
+    top: 110px;
+    left: 80px;
+
+    transform:
+        rotateY(-15deg)
+        rotateX(8deg)
+        rotateZ(12deg)
+        scale(1);
+
+    opacity: 0.75;
+    z-index: 3;
+}
+
+/* FRONT */
+.card-1 {
+    top: 170px;
+    left: 10px;
+
+    transform:
+        rotateY(-12deg)
+        rotateX(6deg)
+        rotateZ(12deg)
+        scale(1.05);
+
+    opacity: 0.95;
+    z-index: 4;
+}
+
+/* ----------------------------------------------------------- PAIN/SOLUTION ---------------------------------------------------------- */
+
+.pain-header,
+.solution-header {
+    padding-bottom: 2rem;
+}
+
+.pain-header h4,
+.solution-header h4 {
+    color: var(--color-text-muted);
+}
+
+.pain-grid,
+.solution-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.pain-card,
+.solution-card {
+    display: flex;
+    flex-direction: column;
+    border: 0 solid white;
+    padding: 1rem;
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.2),
+        inset 1px 1px 4px var(--color-accent-primary),
+        inset -1px -1px 4px var(--color-accent-secondary);
+    border-radius: var(--radius);
+}
+
+.pain-card-content,
+.solution-card-content {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: stretch; /* ensures span stretches to match tallest content */
+}
+
+.pain-card span,
+.solution-card span {
+    display: block;
+    width: 0.5rem;
+    background-image: var(--gradient-primary); /* gradient applied correctly */
+    border-radius: 4px; /* optional, for a nicer look */
+}
+
+.pain-card-text,
+.solution-card-text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.pain-card-text p,
+.solution-card-text p {
+    margin-bottom: 0.2rem;
+}
+
+.pain-card-label,
+.solution-card-label {
+    color: var(--color-accent-primary);
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+}
+
+.section-mark {
+    display: block;
+    width: 3rem;
+    height: 2px;
+    background: var(--color-accent-secondary);
+    margin-bottom: 0.5rem;
+}
+
+
+/* --------------------------------------------------- PORTFOLIO SECTION ----------------------------------------------------- */
+
+.portfolio-intro {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-intro::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  left: -200px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--gradient-primary);
+  border-radius: 200px;
+  z-index: 0;
+}
+
+.portfolio-visual {
+    z-index: 1;
+}
+
+.portfolio-content {
+    z-index: 1;
+    max-width: 300px;
+}
+
+.portfolio-content p{
+    margin-bottom: 2rem;
+}
+
+
+/*----------------------------- PROCESS SECTION ------------------------------------*/
+
+
+.process-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.process-steps {
+    counter-reset: step;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.process-step svg {
+    height: var(--icon-size);
+    width: var(--icon-size);
+    color: var(--color-accent-primary);
+}
+
+.process-step::before {
+    counter-increment: step;
+    content: counter(step, decimal-leading-zero);
+
+    position: absolute;
+    top: -40px;
+    left: 120px;
+
+    font-size: 14rem;
+    letter-spacing: -4px;
+    color: var(--color-secondary-medium);
+    opacity: 0.15;
+
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* ------------------------- ABOUT ME SECTION ------------------------------*/
+
+.about-me-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.about-me-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.about-me-section::before {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+
+    right: -200px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--gradient-primary);
+    border-radius: 200px;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.about-me-img {
+    width: 10rem;
+    height: 10rem;
+    margin-right: 5rem;
+}
+
+.about-me-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 1px solid var(--color-accent-secondary);
+}
+
+.about-me-content {
+    padding-top: 2rem;
+    max-width: 280px;
+    text-align: left;
+}

@@ -1,0 +1,24 @@
+/* ---------------------- BUTTONS ---------------------------------- */
+
+.primary-btn{
+    text-decoration: none;
+    color: var(--color-text);
+    padding: 1rem;
+    font-weight: 500;
+    border-radius: var(--radius);
+
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(12px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.1),
+        inset 1px 1px 4px var(--color-accent-primary),
+        inset -1px -1px 4px var(--color-accent-secondary);
+
+    transition: var(--transition-medium);
+}
+
+.primary-btn:hover {
+    color: var(--color-accent-primary);
+    transform: translateY(-2px); /* 👈 smoother than padding jump */
+}

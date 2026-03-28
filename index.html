@@ -3,9 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>EG Web Dev</title>
+
+    <script src="scripts/nav.js" defer></script>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layouts.css">
+    <link rel="stylesheet" href="styles/home.css">
+
 </head>
 <body>
-    <h1>New Website Coming Soon</h1>
+    <!-- Navigation -->
+    <header>
+        <a href="#"><img src="assets/logos/transpatent-logo.png" alt="Logo"></a>
+
+        <button class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav id="navMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="overlay" id="overlay"></div>
+    <!-- Hero -->
+
+    <section class="hero-section flex container">
+        <div class="hero-content">
+            <h1>Modern Websites for Law Firms</h1>
+            <p>Fast, modern websites designed for solicitors and small law firms in Ireland.</p>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="mockup-stack">
+
+            <div class="mockup card-1"><img src="assets/images/co-site.webp" alt=""></div>
+            <div class="mockup card-2"><img src="assets/images/jo-site.webp" alt=""></div>
+            <div class="mockup card-3"><img src="assets/images/dub-site.webp" alt=""></div>
+            <div class="mockup card-4"><img src="assets/images/ws-site.webp" alt=""></div>
+
+        </div>
+        <div class="section-separator">
+            <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 900 650">
+
+                <!-- BACK LAYER (soft depth, extended to avoid blur cut) -->
+                <g style="filter: blur(10px);">
+                    <path 
+                        d="M0 520L37.5 516.7C75 513.3 150 506.7 225 507C300 507.3 375 514.7 450 521.3C525 528 600 534 675 530.5C750 527 825 514 862.5 507.5L900 501L900 650L0 650Z"
+                        fill="#F8FAFC"
+                        opacity="0.35"
+                    />
+                </g>
+
+                <!-- FRONT LAYER (clean edge) -->
+                <path 
+                    d="M0 540L37.5 536.7C75 533.3 150 526.7 225 527C300 527.3 375 534.7 450 541.3C525 548 600 554 675 550.5C750 547 825 534 862.5 527.5L900 521L900 650L0 650Z"
+                    fill="#F8FAFC"
+                />
+
+            </svg>        
+        </div>
+    </section>
+
+    <!-- Pain -->
+    <section class="pain-section container">
+        <div class="pain-header">
+            <span class="section-mark"></span>
+            <h2>Why Your Website is Losing Clients</h2>
+            <h4>Your website should attract clients — not scare them away.</h4>
+        </div>
+        <div class="pain-grid">
+            <p>Most law firms unknowingly lose potential clients because of these common issues:</p>
+            <div class="pain-card">
+                <h3>Outdated Design</h3>
+                <div class="pain-card-content">
+                    <span></span>
+                    <div class="pain-card-text">
+                        <p class="pain-card-label">First impressions matter.</p>
+                        <p>A website that looks like it’s from 2010 makes clients question your professionalism.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pain-point">
+                <h3>Slow Load Times</h3>
+                <div class="pain-point-content">
+                    <span></span>
+                    <div class="pain-point-text">
+                        <p class="pain-point-label">Every second counts.</p>
+                        <p>If your site takes more than 3 seconds to load, visitors leave — and you never see them again.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pain-point">
+                <h3>Not Mobile-Friendly</h3>
+                <div class="pain-point-content">
+                    <span></span>
+                    <div class="pain-point-text">
+                        <p class="pain-point-label">Most clients browse on their phones.</p>
+                        <p>If your site isn’t optimized for mobile, you’re literally losing half your audience.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pain-point">
+                <h3>Hard-to-Find Information</h3>
+                <div class="pain-point-content">
+                    <span></span>
+                    <div class="pain-point-text">
+                        <p class="pain-point-label">Clients want clarity.</p>
+                        <p>If your services, contact info, or office location are buried, they’ll pick another firm instead.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
