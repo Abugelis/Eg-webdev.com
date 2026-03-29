@@ -352,3 +352,52 @@
     max-width: 280px;
     text-align: left;
 }
+
+/* ------------------------- SERVICES SECTION ------------------------------*/
+
+.services h4 {
+    color: var(--color-text-muted);
+}
+
+.services-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-item svg {
+    height: var(--icon-size);
+    width: var(--icon-size);
+    color: var(--color-accent-primary);
+}
+
+/* -------------------- FINAL CTA SECTION ----------------------------------*/
+
+.final-cta {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: var(--gradient-primary);
+    padding-top: 6rem;   /* 👈 space for top wave */
+    padding-bottom: 6rem;
+}
+
+.final-cta a {
+    align-items: center;
+    margin: 0 auto;
+}
+
+.section-separator.top {
+    top: 0;
+    bottom: auto;
+}
+
+.section-separator.top svg {
+    transform: rotate(180deg);
+}

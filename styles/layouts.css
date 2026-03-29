@@ -4,7 +4,7 @@ header {
     width: 100%;
     background: transparent;
     backdrop-filter: none;
-    color: var(--color-accent-primary);
+    color: var(--color-text);
     padding: 1rem var(--container-padding);
 
     display: flex;
@@ -12,12 +12,14 @@ header {
     align-items: center;
 
     position: fixed;
-    z-index: 100;
+    z-index: 9999;
+    
 }
 
 header.scrolled {
-    background: var(--color-glass-light);
+    
     backdrop-filter: blur(12px);
+    box-shadow: 0 1px 8px black;
 }
 
 /* Logo */
@@ -41,7 +43,7 @@ header nav ul {
 
 /* LINKS */
 header a {
-    color: var(--color-accent-primary);
+    color: var(--color-text);
     font-weight: var(--font-weight-medium);
     text-decoration: none;
     transition: color var(--transition-medium);
@@ -58,7 +60,7 @@ header a:focus {
 }
 
 #navMenu a.active {
-    color: var(--color-accent-secondary);
+    color: var(--color-accent-primary);
 }
 
 /* ---------------- HAMBURGER BUTTON ---------------- */
@@ -104,7 +106,7 @@ header a:focus {
 .overlay {
     position: fixed;
     inset: 0;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.75);
 
     opacity: 0;
     visibility: hidden;
@@ -118,6 +120,57 @@ header a:focus {
 .overlay.active {
     opacity: 1;
     visibility: visible;
+}
+
+
+/*------------------------------ FOOTER --------------------------------------*/
+
+.footer-decor-line {
+    height: 1px;
+    width: 100%;
+    background-color: var(--color-accent-secondary);
+    margin-bottom: 2rem;
+}
+
+
+.footer-logo img {
+    height: auto;
+    width: var(--logo-size);
+    margin: 2rem auto;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-quick-links,
+.footer-location,
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-quick-links a,
+.footer-contact a {
+    text-decoration: none;
+    color: var(--color-accent-primary);
+    transition: color var(--transition-medium);
+}
+
+.footer-quick-links a:hover,
+.footer-contact a:hover {
+    color: var(--color-accent-secondary);
+}
+
+.footer-location p,
+.footer-contact p {
+    margin-bottom: 0;
 }
 
 /* ---------------- MOBILE MENU ---------------- */
@@ -156,7 +209,8 @@ header a:focus {
         width: 75%;
         max-width: 300px;
 
-        background-color: var(--color-glass-medium);
+        background: var(--gradient-primary);
+        
 
         flex-direction: column;
         justify-content: center;
@@ -180,6 +234,15 @@ header a:focus {
         flex-direction: column;
         gap: 1.5rem;
         text-align: center;
+    }
+
+    header nav ul > li:not(:last-child)::after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 150px;
+        margin: 1rem 0 0 0;
+        background-color: var(--color-accent-secondary);
     }
 
     .no-scroll {
