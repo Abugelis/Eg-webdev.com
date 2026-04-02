@@ -229,20 +229,26 @@
 /* --------------------------------------------------- PORTFOLIO SECTION ----------------------------------------------------- */
 
 .portfolio-intro {
-    display: flex;
-    flex-direction: column;
     position: relative;
     overflow: hidden;
+}
+
+.portfolio-intro .container {
+    display: flex;
+    flex-direction: column;
+}
+.portfolio-intro {
+    padding-bottom: 6rem; /* 👈 gives space so blob isn't cut */
 }
 
 .portfolio-intro::before {
   content: "";
   position: absolute;
   width: 600px;
-  height: 600px;
+  height: 700px;
   left: -200px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
+  transform: none;
   background: var(--gradient-primary);
   border-radius: 200px;
   z-index: 0;
@@ -264,6 +270,9 @@
 
 /*----------------------------- PROCESS SECTION ------------------------------------*/
 
+.process-section h4 {
+    color: var(--color-text-muted);
+}
 
 .process-step {
     display: flex;
@@ -308,6 +317,7 @@
 .about-me-section {
     position: relative;
     overflow: hidden;
+    padding: 6rem 0;
 }
 
 .about-me-wrapper {
@@ -321,7 +331,7 @@
     content: "";
     position: absolute;
     width: 600px;
-    height: 600px;
+    height: 700px;
 
     right: -200px;
     top: 50%;
@@ -384,8 +394,8 @@
     display: flex;
     flex-direction: column;
     background: var(--gradient-primary);
-    padding-top: 6rem;   /* 👈 space for top wave */
-    padding-bottom: 6rem;
+    padding-top: 8rem;   /* 👈 space for top wave */
+    padding-bottom: 8rem;
 }
 
 .final-cta a {
@@ -400,4 +410,382 @@
 
 .section-separator.top svg {
     transform: rotate(180deg);
+}
+
+@media (min-width: 768px) {
+
+    .hero-section {
+        gap: 8rem; /* 👈 spacing between text + mockups */
+
+        padding-top: 10rem;
+        padding-bottom: 12rem;
+    }
+
+    /* BACK */
+    .card-4 {
+        top: 60px;
+        left: 120px;
+    }
+
+    /* MID BACK */
+    .card-3 {
+        top: 100px;
+        left: 20px;
+    }
+
+    /* MID FRONT */
+    .card-2 {
+        top: 160px;
+        left: 100px;
+    }
+
+    /* FRONT */
+    .card-1 {
+        top: 220px;
+        left: 30px;
+    }
+
+    /* ------------------------- ABOUT ME SECTION ------------------------------*/
+
+    .about-me-section {
+        padding: 8rem 0;
+    }
+
+    .about-me-section::before {
+        width: 900px;
+        height: 700px;
+    }
+
+    .about-me-img {
+        margin-right: 13rem;
+    }
+
+    .about-me-content {
+        max-width: 550px;
+    }
+
+    /* ------------------------ PORTFOLIO SECTION ----------------------------- */
+
+    .portfolio-intro {
+        padding-bottom: 8rem; /* 👈 gives space so blob isn't cut */
+    }
+
+    .portfolio-intro::before {
+        width: 900px;
+        height: 700px;
+    }
+
+    .portfolio-visual {
+        z-index: 1;
+        margin-top: -4rem;
+    }
+
+    .portfolio-visual img {
+        height: 20rem;
+        width: auto;
+    }
+
+    .portfolio-content {
+        z-index: 1;
+        max-width: 550px;
+    }
+
+    .portfolio-content p{
+        margin-bottom: 2rem;
+    }
+
+    .process-step::before {
+        top: -60px;
+        left: 320px;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* ------------------------ Card Positions -------------------------- */
+
+    .hero-section {
+        gap: 8rem; /* 👈 spacing between text + mockups */
+
+        padding-top: 10rem;
+        padding-bottom: 16rem;
+    }
+
+    /* BACK */
+    .card-4 {
+        top: 60px;
+        left: 240px;
+
+        transform:
+            rotateY(-20deg)
+            rotateX(12deg)
+            rotateZ(12deg)
+            scale(1.2);
+    }
+
+    /* MID BACK */
+    .card-3 {
+        top: 100px;
+        left: 120px;
+
+        transform:
+            rotateY(-18deg)
+            rotateX(10deg)
+            rotateZ(12deg)
+            scale(1.25);
+    }
+
+    /* MID FRONT */
+    .card-2 {
+        top: 160px;
+        left: 200px;
+
+        transform:
+            rotateY(-15deg)
+            rotateX(8deg)
+            rotateZ(12deg)
+            scale(1.3);
+    }
+
+    /* FRONT */
+    .card-1 {
+        top: 220px;
+        left: 130px;
+
+        transform:
+            rotateY(-12deg)
+            rotateX(6deg)
+            rotateZ(12deg)
+            scale(1.35);
+    }
+
+    /* ------------------------------- PAIN/SOLUTION ----------------------------- */
+
+    .pain-grid,
+    .solution-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ------------------------- ABOUT ME SECTION ------------------------------*/
+
+    .about-me-section {
+        padding: 8rem 0;
+    }
+
+    .about-me-section::before {
+        width: 1200px;
+        height: 600px;
+    }
+
+    .about-me-img {
+        margin-right: 22rem;
+    }
+
+    .about-me-content {
+        max-width: 850px;
+    }
+
+    /* ------------------------ PORTFOLIO SECTION ----------------------------- */
+
+    .portfolio-intro {
+        padding: 8rem 0 16rem 0; /* 👈 gives space so blob isn't cut */
+    }
+
+    .portfolio-intro .container {
+        display: flex;
+        flex-direction: row-reverse;
+        
+    }
+
+    .portfolio-intro::before {
+        width: 1200px;
+        height: 600px;
+    }
+
+    .portfolio-visual {
+        z-index: 1;
+        margin-top: 0;
+        flex: 1;
+    }
+
+    .portfolio-visual img {
+        height: 25rem;
+        width: auto;
+    }
+
+    .portfolio-content {
+        z-index: 1;
+        max-width: 320px;
+        flex: 1;
+    }
+
+    .portfolio-content p{
+        margin-bottom: 2rem;
+    }
+
+    /* -------------------- PROCESS -------------------- */
+
+    .process-steps {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+     .process-step::before {
+        top: -40px;
+        left: 20px;
+    }
+
+    /* -------------------------- SERVICES ------------------ */
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ------------------------- FINAL CTA -------------------- */
+
+    .final-cta {
+        padding-top: 10rem;   /* 👈 space for top wave */
+        padding-bottom: 10rem;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .section-separator svg {
+        height: 500px; 
+    }
+
+    .hero-section {
+        padding-bottom: 18rem;
+    }
+
+    /* ------------------------- ABOUT ME SECTION ------------------------------*/
+
+    .about-me-section {
+        padding: 8rem 0;
+    }
+
+    .about-me-section::before {
+        width: 1500px;
+        height: 700px;
+    }
+
+    .about-me-img {
+        margin-right: 22rem;
+    }
+
+    .about-me-content {
+        max-width: 850px;
+    }
+
+    /* ------------------------ PORTFOLIO SECTION ----------------------------- */
+
+    .portfolio-intro {
+        padding: 8rem 0 12rem 0; /* 👈 gives space so blob isn't cut */
+    }
+
+    .portfolio-intro .container {
+        display: flex;
+        flex-direction: row-reverse;
+        
+    }
+
+    .portfolio-intro::before {
+        width: 1500px;
+        height: 700px;
+    }
+
+    .portfolio-visual {
+        z-index: 1;
+        margin-top: 0;
+        flex: 1;
+    }
+
+    .portfolio-visual img {
+        height: 25rem;
+        width: auto;
+    }
+
+    .portfolio-content {
+        z-index: 1;
+        max-width: 420px;
+        flex: 1;
+    }
+
+    .portfolio-content p{
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media (min-width: 1920px) {
+
+   .hero-section {
+        gap: 10rem; /* 👈 spacing between text + mockups */
+
+        padding-top: 10rem;
+        padding-bottom: 18rem;
+    }
+
+    /* BACK */
+    .card-4 {
+        top: -160px; /* - 100px */
+        left: 940px;
+
+        transform:
+            rotateY(-20deg)
+            rotateX(12deg)
+            rotateZ(12deg)
+            scale(1.5); /* + 0.3 */
+    }
+
+    /* MID BACK */
+    .card-3 {
+        top: -50px;
+        left: 820px;
+
+        transform:
+            rotateY(-18deg)
+            rotateX(10deg)
+            rotateZ(12deg)
+            scale(1.55);
+    }
+
+    /* MID FRONT */
+    .card-2 {
+        top: 60px;
+        left: 960px;
+
+        transform:
+            rotateY(-15deg)
+            rotateX(8deg)
+            rotateZ(12deg)
+            scale(1.6);
+    }
+
+    /* FRONT */
+    .card-1 {
+        top: 220px;
+        left: 830px;
+
+        transform:
+            rotateY(-12deg)
+            rotateX(6deg)
+            rotateZ(12deg)
+            scale(1.65);
+    }
+
+    /* ------------------------------- PAIN/SOLUTION ----------------------------- */
+
+    .pain-grid,
+    .solution-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .final-cta {
+        padding-top: 14rem;   /* 👈 space for top wave */
+        padding-bottom: 14rem;
+    }
 }

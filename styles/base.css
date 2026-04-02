@@ -19,6 +19,7 @@ body {
     overflow-x: hidden;
 }
 
+/* ---------------------------- ELEMENTS ------------------------------- */
 img {
     max-width: 100%;
     height: auto;
@@ -46,7 +47,6 @@ button {
 }
 
 /* ---------------------------- FONTS ------------------------------- */
-
 @font-face {
     font-family: "Inter";
     src: url("../assets/fonts/inter-regular-webfont.woff2") format("woff2");
@@ -85,13 +85,13 @@ button {
     --color-main-bg: #F8FAFC;
     --color-section-alt: #F1F5F9;
     --color-text: #0F172A;
-    --color-accent-primary: #60A5FA;  /* Medium blue */
-    --color-accent-secondary: #F472B6; /* Medium pink */
-    --color-secondary-light: #E5E7EB;  /* light grey, for cards/borders */
-    --color-secondary-medium: #CBD5E1; /* medium grey, for muted UI elements */
-    --color-secondary-dark: #64748B;   /* darker muted elements or hover text */
+    --color-accent-primary: #60A5FA;
+    --color-accent-secondary: #F472B6;
+    --color-secondary-light: #E5E7EB;
+    --color-secondary-medium: #CBD5E1;
+    --color-secondary-dark: #64748B;
 
-    --color-text-muted: #475569;  /* soft dark grey-blue */
+    --color-text-muted: #475569;
 
     --color-glass-light: rgba(255,255,255,0.6);
     --color-glass-medium: rgba(255,255,255,0.4);
@@ -127,17 +127,21 @@ button {
     --ls-heading: 0.5px;
     --ls-body: 0px;
 
-    /* Logo */
-    --logo-size: 120px;
+    /* Layout */
+    --container-width: 1200px;
+    --container-padding: 1rem;
 
-    /* Icons */
+    /* Section spacing */
+    --space-section: 3rem;
+    --space-section-lg: 6rem;
+
+    --section-heading-padding: 1rem;
+
+    /* UI */
+    --header-height: 100px;
+    --logo-size: 120px;
     --icon-size: 84px;
 
-    /* Layout / UI */
-    --container-width: 1920px;
-    --container-padding: 1rem;
-    --section-heading-padding: 1rem;
-    --header-height: 100px;
     --radius: 6px;
     --shadow: 0 8px 20px rgba(0,0,0,0.08);
 
@@ -171,17 +175,55 @@ p {
     margin-bottom: 1rem;
 }
 
-/* ---------------------------- LAYOUT HELPERS ------------------------------- */
+h1 {
+    font-size: var(--fs-h1);
+}
+
+h2 {
+    font-size: var(--fs-h2);
+}
+
+h3 {
+    font-size: var(--fs-h3);
+}
+
+h4 {
+    font-size: var(--fs-h4);
+}
+
+h5 {
+    font-size: var(--fs-h5);
+}
+
+p {
+    font-size: var(--fs-body);
+}
+
+/* ---------------------------- LAYOUT SYSTEM ------------------------------- */
+
+/* Horizontal container ONLY */
 .container {
+    width: 100%;
     max-width: var(--container-width);
-    margin: 0;
-    padding: 4rem var(--container-padding);
+    margin-inline: auto;
+    padding-inline: var(--container-padding);
 }
 
+/* Vertical spacing (sections) */
+.section {
+    padding-block: var(--space-section);
+}
+
+.section-lg {
+    padding-block: var(--space-section-lg);
+}
+
+/* Section headings */
 .section-heading {
-    padding-bottom: var(--section-heading-padding);
+    margin-bottom: var(--section-heading-padding);
 }
 
+/* Header height */
 header {
     height: var(--header-height);
 }
@@ -192,41 +234,92 @@ img {
     max-width: 100%;
 }
 
-/* ---------------------------- RESPONSIVE RULES ------------------------------- */
+/* ---------------------------- UTILITIES ------------------------------- */
+.flex {
+    display: flex;
+}
 
-/* Mobile-first (base is mobile) */
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-/* Typography adjustments */
+.text-center {
+    text-align: center;
+}
+
+/* ---------------------------- RESPONSIVE ------------------------------- */
+
+/* Tablet */
 @media (min-width: 768px) {
-    h1 { font-size: 3.5rem; }
-    h2 { font-size: 2.5rem; }
-    h3 { font-size: 2rem; }
-    p { font-size: 1.2rem; }
+    :root {
+        --container-padding: 2rem;
+        --space-section: 5rem;
+        --space-section-lg: 7rem;
 
-    .container { padding: 4rem var(--container-padding); }
+        --fs-h1: 3.5rem;
+        --fs-h2: 2.5rem;
+        --fs-h3: 2rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
 }
 
+/* Desktop */
 @media (min-width: 1024px) {
-    h1 { font-size: 4rem; }
-    h2 { font-size: 2.75rem; }
-    h3 { font-size: 2.25rem; }
-    a { font-size: 1.2rem; }
-    p { font-size: 1.3rem; }
+    :root {
+        --container-padding: 3rem;
+        --space-section: 4rem;
+        --space-section-lg: 8rem;
 
-    .container { padding: 4rem var(--container-padding); }
+        --fs-h1: 4rem;
+        --fs-h2: 2.75rem;
+        --fs-h3: 2rem;
+        --fs-h4: 1.4rem;
+    }
+
+    a {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
 }
 
+/* Large screens */
 @media (min-width: 1440px) {
+    :root {
+        --container-padding: 4rem;
+    }
+
     h1 { font-size: 4.5rem; }
     h2 { font-size: 3rem; }
     h3 { font-size: 2.5rem; }
+
     a { font-size: 1.6rem; }
     p { font-size: 1.4rem; }
-
-    .container { padding: 4rem var(--container-padding); }
 }
 
-/* Optional: responsive utilities */
+@media (min-width: 1920px) {
+    :root {
+        --container-padding: 0rem;
+        --container-width: 1600px;
+    }
+
+    h1 { font-size: 4.5rem; }
+    h2 { font-size: 3rem; }
+    h3 { font-size: 2rem; }
+    h4 {font-size: 1.8rem;}
+
+    a { font-size: 1.6rem; }
+    p { font-size: 1.4rem; }
+}
+
+/* Mobile utilities */
 @media (max-width: 767px) {
     .flex {
         flex-direction: column;

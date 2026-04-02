@@ -2,18 +2,20 @@
 
 header {
     width: 100%;
+    height: var(--header-height);
     background: transparent;
     backdrop-filter: none;
     color: var(--color-text);
-    padding: 1rem var(--container-padding);
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
     position: fixed;
     z-index: 9999;
-    
+}
+
+header .container {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header.scrolled {
@@ -47,11 +49,6 @@ header a {
     font-weight: var(--font-weight-medium);
     text-decoration: none;
     transition: color var(--transition-medium);
-}
-
-header.scrolled {
-    padding: 0.5rem var(--container-padding);
-    backdrop-filter: blur(12px);
 }
 
 header a:hover,
@@ -177,12 +174,12 @@ header a:focus {
 @media (max-width: 767px) {
 
     /* Stack header */
-    header {
+    header .container {
         flex-direction: row;
         position: fixed;
         top: 0;
-        
     }
+
 
     /* Remove all active/hover/focus highlight from submenu links on mobile */
     #navMenu .submenu a,
@@ -252,11 +249,20 @@ header a:focus {
     }
 }
 
-/* ---------------------------- NAV (LAPTOP & DESKTOP) ------------------------------- */
+/* ---------------------------- NAV (TABLET) ------------------------------- */
 @media (min-width: 768px) {
 
     header {
         top: 0;
+    }
+
+    header img {
+        height: 2.7rem;
+        width: auto;
+    }
+
+    header.section {
+        padding: 0;
     }
 
     nav ul {
@@ -294,5 +300,38 @@ header a:focus {
 
     nav ul li a.active::after {
         transform: scaleX(1);
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 1024px) {
+    
+    header.container {
+        padding: 4rem 4rem;
+    }
+
+    header img {
+        height: 3rem;
+        width: auto;
+    }
+}
+
+@media (min-width: 1440px) { 
+    header img {
+        height: 3.5rem;
+        width: auto;
+    }
+}
+
+
+@media (min-width: 1920px) {
+    header img {
+        height: 4rem;
+        width: auto;
     }
 }

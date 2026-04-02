@@ -15,110 +15,119 @@
 </head>
 <body>
     <!-- Navigation -->
-    <header>
-        <a href="#"><img src="assets/logos/transpatent-logo.png" alt="Logo"></a>
+    <header class="section">
+        <div class="container">
+            <a href="#"><img src="assets/logos/transpatent-logo.png" alt="Logo"></a>
 
-        <button class="nav-toggle" id="navToggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-        <nav id="navMenu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+            <nav id="navMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <div class="overlay" id="overlay"></div>
     <!-- Hero section -->
 
-    <section class="hero-section flex container">
-        <div class="hero-content">
-            <h1>Modern Websites for Law Firms</h1>
-            <p>Fast, modern websites designed for solicitors and small law firms in Ireland.</p>
-            <a href="#" class="primary-btn">Contact Us</a>
-        </div>
-        <div class="mockup-stack">
+    <section class="hero-section section flex">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Modern Websites for Law Firms</h1>
+                <p>Fast, modern websites designed for solicitors and small law firms in Ireland.</p>
+                <a href="#" class="primary-btn">Contact Us</a>
+            </div>
+            <div class="mockup-stack">
 
-            <div class="mockup card-1"><img src="assets/images/co-site.webp" alt=""></div>
-            <div class="mockup card-2"><img src="assets/images/jo-site.webp" alt=""></div>
-            <div class="mockup card-3"><img src="assets/images/dub-site.webp" alt=""></div>
-            <div class="mockup card-4"><img src="assets/images/ws-site.webp" alt=""></div>
+                <div class="mockup card-1"><img src="assets/images/co-site.webp" alt=""></div>
+                <div class="mockup card-2"><img src="assets/images/jo-site.webp" alt=""></div>
+                <div class="mockup card-3"><img src="assets/images/dub-site.webp" alt=""></div>
+                <div class="mockup card-4"><img src="assets/images/ws-site.webp" alt=""></div>
 
-        </div>
-        <div class="section-separator">
-            <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 900 650">
+            </div>
+            <div class="section-separator">
+                <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 900 650">
 
-                <!-- BACK LAYER (soft depth, extended to avoid blur cut) -->
-                <g style="filter: blur(10px);">
+                    <!-- BACK LAYER (soft depth, extended to avoid blur cut) -->
+                    <g style="filter: blur(10px);">
+                        <path 
+                            d="M0 520L37.5 516.7C75 513.3 150 506.7 225 507C300 507.3 375 514.7 450 521.3C525 528 600 534 675 530.5C750 527 825 514 862.5 507.5L900 501L900 650L0 650Z"
+                            fill="#F8FAFC"
+                            opacity="0.35"
+                        />
+                    </g>
+
+                    <!-- FRONT LAYER (clean edge) -->
                     <path 
-                        d="M0 520L37.5 516.7C75 513.3 150 506.7 225 507C300 507.3 375 514.7 450 521.3C525 528 600 534 675 530.5C750 527 825 514 862.5 507.5L900 501L900 650L0 650Z"
+                        d="M0 540L37.5 536.7C75 533.3 150 526.7 225 527C300 527.3 375 534.7 450 541.3C525 548 600 554 675 550.5C750 547 825 534 862.5 527.5L900 521L900 650L0 650Z"
                         fill="#F8FAFC"
-                        opacity="0.35"
                     />
-                </g>
 
-                <!-- FRONT LAYER (clean edge) -->
-                <path 
-                    d="M0 540L37.5 536.7C75 533.3 150 526.7 225 527C300 527.3 375 534.7 450 541.3C525 548 600 554 675 550.5C750 547 825 534 862.5 527.5L900 521L900 650L0 650Z"
-                    fill="#F8FAFC"
-                />
-
-            </svg>        
+                </svg>        
+            </div>
         </div>
     </section>
 
     <!-- Problem section -->
-    <section class="pain-section container">
-        <div class="pain-header">
-            <span class="section-mark"></span>
-            <h2>Why Your Website is Losing Clients</h2>
-            <h4>Your website should attract clients — not scare them away.</h4>
-        </div>
-        <div class="pain-grid">
+    <section class="pain-section section">
+        <div class="container">
+            <div class="pain-header">
+                <span class="section-mark"></span>
+                <h2>Why Your Website is Losing Clients</h2>
+                <h4>Your website should attract clients — not scare them away.</h4>
+            </div>
+
             <p>Most law firms unknowingly lose potential clients because of these common issues:</p>
-            <div class="pain-card">
-                <h3>Outdated Design</h3>
-                <div class="pain-card-content">
-                    <span></span>
-                    <div class="pain-card-text">
-                        <p class="pain-card-label">First impressions matter.</p>
-                        <p>A website that looks like it’s from 2010 makes clients question your professionalism.</p>
+
+            <div class="pain-grid">
+                
+                <div class="pain-card">
+                    <h3>Outdated Design</h3>
+                    <div class="pain-card-content">
+                        <span></span>
+                        <div class="pain-card-text">
+                            <p class="pain-card-label">First impressions matter.</p>
+                            <p>A website that looks like it’s from 2010 makes clients question your professionalism.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="pain-card">
-                <h3>Slow Load Times</h3>
-                <div class="pain-card-content">
-                    <span></span>
-                    <div class="pain-card-text">
-                        <p class="pain-card-label">Every second counts.</p>
-                        <p>If your site takes more than 3 seconds to load, visitors leave — and you never see them again.</p>
+                <div class="pain-card">
+                    <h3>Slow Load Times</h3>
+                    <div class="pain-card-content">
+                        <span></span>
+                        <div class="pain-card-text">
+                            <p class="pain-card-label">Every second counts.</p>
+                            <p>If your site takes more than 3 seconds to load, visitors leave — and you never see them again.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="pain-card">
-                <h3>Not Mobile-Friendly</h3>
-                <div class="pain-card-content">
-                    <span></span>
-                    <div class="pain-card-text">
-                        <p class="pain-card-label">Most clients browse on their phones.</p>
-                        <p>If your site isn’t optimized for mobile, you’re literally losing half your audience.</p>
+                <div class="pain-card">
+                    <h3>Not Mobile-Friendly</h3>
+                    <div class="pain-card-content">
+                        <span></span>
+                        <div class="pain-card-text">
+                            <p class="pain-card-label">Most clients browse on their phones.</p>
+                            <p>If your site isn’t optimized for mobile, you’re literally losing half your audience.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="pain-card">
-                <h3>Hard-to-Find Information</h3>
-                <div class="pain-card-content">
-                    <span></span>
-                    <div class="pain-card-text">
-                        <p class="pain-card-label">Clients want clarity.</p>
-                        <p>If your services, contact info, or office location are buried, they’ll pick another firm instead.</p>
+                <div class="pain-card">
+                    <h3>Hard-to-Find Information</h3>
+                    <div class="pain-card-content">
+                        <span></span>
+                        <div class="pain-card-text">
+                            <p class="pain-card-label">Clients want clarity.</p>
+                            <p>If your services, contact info, or office location are buried, they’ll pick another firm instead.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -126,56 +135,59 @@
     </section>
 
     <!-- Solution section -->
-    <section class="solution-section container">
-        <div class="solution-header">
-            <span class="section-mark"></span>
-            <h2>Websites That Bring You Clients</h2>
-            <h4>Everything your law firm needs to build trust and convert visitors into enquiries.</h4>
-        </div>
+    <section class="solution-section section">
+        <div class="container">
+            <div class="solution-header">
+                <span class="section-mark"></span>
+                <h2>Websites That Bring You Clients</h2>
+                <h4>Everything your law firm needs to build trust and convert visitors into enquiries.</h4>
+            </div>
 
-        <div class="solution-grid">
             <p>Here’s how your website can start bringing in more clients instead of turning them away:</p>
 
-            <div class="solution-card">
-                <h3>Modern, Professional Design</h3>
-                <div class="solution-card-content">
-                    <span></span>
-                    <div class="solution-card-text">
-                        <p class="solution-card-label">Build instant trust.</p>
-                        <p>Your website reflects the quality of your legal services and reassures potential clients.</p>
+            <div class="solution-grid">
+
+                <div class="solution-card">
+                    <h3>Modern, Professional Design</h3>
+                    <div class="solution-card-content">
+                        <span></span>
+                        <div class="solution-card-text">
+                            <p class="solution-card-label">Build instant trust.</p>
+                            <p>Your website reflects the quality of your legal services and reassures potential clients.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="solution-card">
-                <h3>Fast Loading Speed</h3>
-                <div class="solution-card-content">
-                    <span></span>
-                    <div class="solution-card-text">
-                        <p class="solution-card-label">Keep visitors engaged.</p>
-                        <p>Pages load quickly so potential clients stay, explore, and take action.</p>
+                <div class="solution-card">
+                    <h3>Fast Loading Speed</h3>
+                    <div class="solution-card-content">
+                        <span></span>
+                        <div class="solution-card-text">
+                            <p class="solution-card-label">Keep visitors engaged.</p>
+                            <p>Pages load quickly so potential clients stay, explore, and take action.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="solution-card">
-                <h3>Mobile-First Experience</h3>
-                <div class="solution-card-content">
-                    <span></span>
-                    <div class="solution-card-text">
-                        <p class="solution-card-label">Reach clients everywhere.</p>
-                        <p>Your site works perfectly on phones, where most people search for legal help.</p>
+                <div class="solution-card">
+                    <h3>Mobile-First Experience</h3>
+                    <div class="solution-card-content">
+                        <span></span>
+                        <div class="solution-card-text">
+                            <p class="solution-card-label">Reach clients everywhere.</p>
+                            <p>Your site works perfectly on phones, where most people search for legal help.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="solution-card">
-                <h3>Clear, Client-Focused Layout</h3>
-                <div class="solution-card-content">
-                    <span></span>
-                    <div class="solution-card-text">
-                        <p class="solution-card-label">Make it easy to take action.</p>
-                        <p>Visitors quickly find your services and contact details without frustration.</p>
+                <div class="solution-card">
+                    <h3>Clear, Client-Focused Layout</h3>
+                    <div class="solution-card-content">
+                        <span></span>
+                        <div class="solution-card-text">
+                            <p class="solution-card-label">Make it easy to take action.</p>
+                            <p>Visitors quickly find your services and contact details without frustration.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -183,173 +195,185 @@
     </section>
 
     <!-- About-Me section-->
-    <section class="about-me-section container">
-        <div class="about-me-wrapper">
-            <span class="section-mark"></span>
-            <h2>About Me</h2>
-            <div class="about-me-img">
-                <img src="assets/images/profile-pic.png" alt="Profile Picture">
-            </div>
-            <div class="about-me-content">
-                <p>
-                    I design and build modern websites for small law firms.
-                </p>
+    <section class="about-me-section section">
+        <div class="container">
+            <div class="about-me-wrapper">
+                <span class="section-mark"></span>
+                <h2>About Me</h2>
+                <div class="about-me-img">
+                    <img src="assets/images/profile-pic.png" alt="Profile Picture">
+                </div>
+                <div class="about-me-content">
+                    <p>
+                        I design and build modern websites for small law firms.
+                    </p>
 
-                <p>
-                    My focus is simple - create websites that look professional, load fast, and make it easy for potential clients to get in touch.
-                </p>
+                    <p>
+                        My focus is simple - create websites that look professional, load fast, and make it easy for potential clients to get in touch.
+                    </p>
 
-                <p>
-                    I work directly with you from start to finish, keeping the process clear and efficient without unnecessary complexity.
-                </p>
+                    <p>
+                        I work directly with you from start to finish, keeping the process clear and efficient without unnecessary complexity.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
 
     <!-- Portfolio section-->
-    <section class="portfolio-intro container">
-        <div class="portfolio-visual">
-            <img src="assets/images/mockup.png" alt="Website mockup" />
-        </div>
-        <div class="portfolio-content">
-            <span class="section-mark"></span>
-            <h2>See What Your Website Could Look Like</h2>
-            <p>Modern, fast, and built to convert - designed specifically for professional service businesses.</p>
-            <a href="/portfolio" class="primary-btn">View My Portfolio</a>
+    <section class="portfolio-intro section">
+        <div class="container">
+            <div class="portfolio-visual">
+                <img src="assets/images/mockup.png" alt="Website mockup" />
+            </div>
+            <div class="portfolio-content">
+                <span class="section-mark"></span>
+                <h2>See What Your Website Could Look Like</h2>
+                <p>Modern, fast, and built to convert - designed specifically for professional service businesses.</p>
+                <a href="/portfolio" class="primary-btn">View My Portfolio</a>
+            </div>
         </div>
     </section>
 
     <!-- Process section -->
-    <section class="process-section container">
-        <span class="section-mark"></span>
-        <h2>How I Work</h2>
-        <p>A simple, clear process designed to get your firm online quickly and professionally.</p>
+    <section class="process-section section">
+        <div class="container">
+            <span class="section-mark"></span>
+            <h2>How I Work</h2>
+            <h4>A simple, clear process designed to get your firm online quickly and professionally.</h4>
 
-        <div class="process-steps">
-            <div class="process-step">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"/></svg>
-                <h3>Consultation</h3>
-                <p>We discuss your firm, your goals, and what your website needs to achieve.</p>
-            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"/></svg>
+                    <h3>Consultation</h3>
+                    <p>We discuss your firm, your goals, and what your website needs to achieve.</p>
+                </div>
 
-            <div class="process-step">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm88-29.84q.06-2.16,0-4.32l14.92-18.64a8,8,0,0,0,1.48-7.06,107.21,107.21,0,0,0-10.88-26.25,8,8,0,0,0-6-3.93l-23.72-2.64q-1.48-1.56-3-3L186,40.54a8,8,0,0,0-3.94-6,107.71,107.71,0,0,0-26.25-10.87,8,8,0,0,0-7.06,1.49L130.16,40Q128,40,125.84,40L107.2,25.11a8,8,0,0,0-7.06-1.48A107.6,107.6,0,0,0,73.89,34.51a8,8,0,0,0-3.93,6L67.32,64.27q-1.56,1.49-3,3L40.54,70a8,8,0,0,0-6,3.94,107.71,107.71,0,0,0-10.87,26.25,8,8,0,0,0,1.49,7.06L40,125.84Q40,128,40,130.16L25.11,148.8a8,8,0,0,0-1.48,7.06,107.21,107.21,0,0,0,10.88,26.25,8,8,0,0,0,6,3.93l23.72,2.64q1.49,1.56,3,3L70,215.46a8,8,0,0,0,3.94,6,107.71,107.71,0,0,0,26.25,10.87,8,8,0,0,0,7.06-1.49L125.84,216q2.16.06,4.32,0l18.64,14.92a8,8,0,0,0,7.06,1.48,107.21,107.21,0,0,0,26.25-10.88,8,8,0,0,0,3.93-6l2.64-23.72q1.56-1.48,3-3L215.46,186a8,8,0,0,0,6-3.94,107.71,107.71,0,0,0,10.87-26.25,8,8,0,0,0-1.49-7.06Zm-16.1-6.5a73.93,73.93,0,0,1,0,8.68,8,8,0,0,0,1.74,5.48l14.19,17.73a91.57,91.57,0,0,1-6.23,15L187,173.11a8,8,0,0,0-5.1,2.64,74.11,74.11,0,0,1-6.14,6.14,8,8,0,0,0-2.64,5.1l-2.51,22.58a91.32,91.32,0,0,1-15,6.23l-17.74-14.19a8,8,0,0,0-5-1.75h-.48a73.93,73.93,0,0,1-8.68,0,8,8,0,0,0-5.48,1.74L100.45,215.8a91.57,91.57,0,0,1-15-6.23L82.89,187a8,8,0,0,0-2.64-5.1,74.11,74.11,0,0,1-6.14-6.14,8,8,0,0,0-5.1-2.64L46.43,170.6a91.32,91.32,0,0,1-6.23-15l14.19-17.74a8,8,0,0,0,1.74-5.48,73.93,73.93,0,0,1,0-8.68,8,8,0,0,0-1.74-5.48L40.2,100.45a91.57,91.57,0,0,1,6.23-15L69,82.89a8,8,0,0,0,5.1-2.64,74.11,74.11,0,0,1,6.14-6.14A8,8,0,0,0,82.89,69L85.4,46.43a91.32,91.32,0,0,1,15-6.23l17.74,14.19a8,8,0,0,0,5.48,1.74,73.93,73.93,0,0,1,8.68,0,8,8,0,0,0,5.48-1.74L155.55,40.2a91.57,91.57,0,0,1,15,6.23L173.11,69a8,8,0,0,0,2.64,5.1,74.11,74.11,0,0,1,6.14,6.14,8,8,0,0,0,5.1,2.64l22.58,2.51a91.32,91.32,0,0,1,6.23,15l-14.19,17.74A8,8,0,0,0,199.87,123.66Z"/></svg>
-                <h3>Design & Build</h3>
-                <p>I design and develop a modern, fast website tailored to your firm.</p>
-            </div>
+                <div class="process-step">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm88-29.84q.06-2.16,0-4.32l14.92-18.64a8,8,0,0,0,1.48-7.06,107.21,107.21,0,0,0-10.88-26.25,8,8,0,0,0-6-3.93l-23.72-2.64q-1.48-1.56-3-3L186,40.54a8,8,0,0,0-3.94-6,107.71,107.71,0,0,0-26.25-10.87,8,8,0,0,0-7.06,1.49L130.16,40Q128,40,125.84,40L107.2,25.11a8,8,0,0,0-7.06-1.48A107.6,107.6,0,0,0,73.89,34.51a8,8,0,0,0-3.93,6L67.32,64.27q-1.56,1.49-3,3L40.54,70a8,8,0,0,0-6,3.94,107.71,107.71,0,0,0-10.87,26.25,8,8,0,0,0,1.49,7.06L40,125.84Q40,128,40,130.16L25.11,148.8a8,8,0,0,0-1.48,7.06,107.21,107.21,0,0,0,10.88,26.25,8,8,0,0,0,6,3.93l23.72,2.64q1.49,1.56,3,3L70,215.46a8,8,0,0,0,3.94,6,107.71,107.71,0,0,0,26.25,10.87,8,8,0,0,0,7.06-1.49L125.84,216q2.16.06,4.32,0l18.64,14.92a8,8,0,0,0,7.06,1.48,107.21,107.21,0,0,0,26.25-10.88,8,8,0,0,0,3.93-6l2.64-23.72q1.56-1.48,3-3L215.46,186a8,8,0,0,0,6-3.94,107.71,107.71,0,0,0,10.87-26.25,8,8,0,0,0-1.49-7.06Zm-16.1-6.5a73.93,73.93,0,0,1,0,8.68,8,8,0,0,0,1.74,5.48l14.19,17.73a91.57,91.57,0,0,1-6.23,15L187,173.11a8,8,0,0,0-5.1,2.64,74.11,74.11,0,0,1-6.14,6.14,8,8,0,0,0-2.64,5.1l-2.51,22.58a91.32,91.32,0,0,1-15,6.23l-17.74-14.19a8,8,0,0,0-5-1.75h-.48a73.93,73.93,0,0,1-8.68,0,8,8,0,0,0-5.48,1.74L100.45,215.8a91.57,91.57,0,0,1-15-6.23L82.89,187a8,8,0,0,0-2.64-5.1,74.11,74.11,0,0,1-6.14-6.14,8,8,0,0,0-5.1-2.64L46.43,170.6a91.32,91.32,0,0,1-6.23-15l14.19-17.74a8,8,0,0,0,1.74-5.48,73.93,73.93,0,0,1,0-8.68,8,8,0,0,0-1.74-5.48L40.2,100.45a91.57,91.57,0,0,1,6.23-15L69,82.89a8,8,0,0,0,5.1-2.64,74.11,74.11,0,0,1,6.14-6.14A8,8,0,0,0,82.89,69L85.4,46.43a91.32,91.32,0,0,1,15-6.23l17.74,14.19a8,8,0,0,0,5.48,1.74,73.93,73.93,0,0,1,8.68,0,8,8,0,0,0,5.48-1.74L155.55,40.2a91.57,91.57,0,0,1,15,6.23L173.11,69a8,8,0,0,0,2.64,5.1,74.11,74.11,0,0,1,6.14,6.14,8,8,0,0,0,5.1,2.64l22.58,2.51a91.32,91.32,0,0,1,6.23,15l-14.19,17.74A8,8,0,0,0,199.87,123.66Z"/></svg>
+                    <h3>Design & Build</h3>
+                    <p>I design and develop a modern, fast website tailored to your firm.</p>
+                </div>
 
-            <div class="process-step">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/></svg>
-                <h3>Launch</h3>
-                <p>Your website goes live, ready to attract and convert new clients.</p>
+                <div class="process-step">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/></svg>
+                    <h3>Launch</h3>
+                    <p>Your website goes live, ready to attract and convert new clients.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section class="services container">
-        <span class="section-mark"></span>
-        <h2>Services</h2>
-        <h4>Simple, effective services designed to help your website bring in more clients.</h4>
-        <div class="services-grid">
-            <div class="service-item">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" ><path d="m11 10 3 3" /><path d="M6.5 21A3.5 3.5 0 1 0 3 17.5a2.62 2.62 0 0 1-.708 1.792A1 1 0 0 0 3 21z" /><path d="M9.969 17.031 21.378 5.624a1 1 0 0 0-3.002-3.002L6.967 14.031" /></svg>
-                <h3>Website Design</h3>
-                <p>A clean, modern design tailored to your firm - built to create trust and make a strong first impression.</p>
-            </div>
-            <div class="service-item">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" ><path d="M12 19h8" /><path d="m4 17 6-6-6-6" /></svg>
-                <h3>Website Development</h3>
-                <p>Fast, reliable websites built from the ground up - no templates, no shortcuts, just solid performance.</p>
-            </div>
-            <div class="service-item">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" ><path d="M4 10a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M6 4v4" /><path d="M6 12v8" /><path d="M13.199 14.399a2 2 0 1 0 -1.199 3.601" /><path d="M12 4v10" /><path d="M12 18v2" /><path d="M16 7a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M18 4v1" /><path d="M18 9v2.5" /><path d="M19.001 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M19.001 15.5v1.5" /><path d="M19.001 21v1.5" /><path d="M22.032 17.25l-1.299 .75" /><path d="M17.27 20l-1.3 .75" /><path d="M15.97 17.25l1.3 .75" /><path d="M20.733 20l1.3 .75" /></svg>
-                <h3>Responsive Design</h3>
-                <p>Your website adapts seamlessly to phones, tablets, and desktops - ensuring a smooth experience for every visitor.</p>
-            </div>
-            <div class="service-item">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 8h-3a1 1 0 0 0 -1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-3" /><path d="M14 16h-4v-8h4" /><path d="M11 12h2" /><path d="M17 8m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" /></svg>
-                <h3>Optimize for Search Engines</h3>
-                <p>Structured and optimised so your site is easy to find on Google and simple for visitors to navigate.</p>
+    <section class="services section">
+        <div class="container">
+            <span class="section-mark"></span>
+            <h2>Services</h2>
+            <h4>Simple, effective services designed to help your website bring in more clients.</h4>
+            <div class="services-grid">
+                <div class="service-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" ><path d="m11 10 3 3" /><path d="M6.5 21A3.5 3.5 0 1 0 3 17.5a2.62 2.62 0 0 1-.708 1.792A1 1 0 0 0 3 21z" /><path d="M9.969 17.031 21.378 5.624a1 1 0 0 0-3.002-3.002L6.967 14.031" /></svg>
+                    <h3>Website Design</h3>
+                    <p>A clean, modern design tailored to your firm - built to create trust and make a strong first impression.</p>
+                </div>
+                <div class="service-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" ><path d="M12 19h8" /><path d="m4 17 6-6-6-6" /></svg>
+                    <h3>Website Development</h3>
+                    <p>Fast, reliable websites built from the ground up - no templates, no shortcuts, just solid performance.</p>
+                </div>
+                <div class="service-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" ><path d="M4 10a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M6 4v4" /><path d="M6 12v8" /><path d="M13.199 14.399a2 2 0 1 0 -1.199 3.601" /><path d="M12 4v10" /><path d="M12 18v2" /><path d="M16 7a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M18 4v1" /><path d="M18 9v2.5" /><path d="M19.001 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M19.001 15.5v1.5" /><path d="M19.001 21v1.5" /><path d="M22.032 17.25l-1.299 .75" /><path d="M17.27 20l-1.3 .75" /><path d="M15.97 17.25l1.3 .75" /><path d="M20.733 20l1.3 .75" /></svg>
+                    <h3>Responsive Design</h3>
+                    <p>Your website adapts seamlessly to phones, tablets, and desktops - ensuring a smooth experience for every visitor.</p>
+                </div>
+                <div class="service-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 8h-3a1 1 0 0 0 -1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-3" /><path d="M14 16h-4v-8h4" /><path d="M11 12h2" /><path d="M17 8m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" /></svg>
+                    <h3>Optimize for Search Engines</h3>
+                    <p>Structured and optimised so your site is easy to find on Google and simple for visitors to navigate.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Final CTA section-->
-    <section class="final-cta container">
-        <div class="section-separator top">
-            <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 900 650">
+    <section class="final-cta section">
+        <div class="container">
+            <div class="section-separator top">
+                <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 900 650">
 
-                <g style="filter: blur(10px);">
+                    <g style="filter: blur(10px);">
+                        <path 
+                            d="M0 520L37.5 516.7C75 513.3 150 506.7 225 507C300 507.3 375 514.7 450 521.3C525 528 600 534 675 530.5C750 527 825 514 862.5 507.5L900 501L900 650L0 650Z"
+                            fill="#F8FAFC"
+                            opacity="0.35"
+                        />
+                    </g>
+
                     <path 
-                        d="M0 520L37.5 516.7C75 513.3 150 506.7 225 507C300 507.3 375 514.7 450 521.3C525 528 600 534 675 530.5C750 527 825 514 862.5 507.5L900 501L900 650L0 650Z"
+                        d="M0 540L37.5 536.7C75 533.3 150 526.7 225 527C300 527.3 375 534.7 450 541.3C525 548 600 554 675 550.5C750 547 825 534 862.5 527.5L900 521L900 650L0 650Z"
                         fill="#F8FAFC"
-                        opacity="0.35"
                     />
-                </g>
+                </svg>
+            </div>
+            <h2>Ready to get more clients from your website?</h2>
+            <p>Let’s build something that actually works for your firm.</p>
+            <a href="contact.html" class="primary-btn">Get in Touch</a>
+            <div class="section-separator">
+                <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 900 650">
 
-                <path 
-                    d="M0 540L37.5 536.7C75 533.3 150 526.7 225 527C300 527.3 375 534.7 450 541.3C525 548 600 554 675 550.5C750 547 825 534 862.5 527.5L900 521L900 650L0 650Z"
-                    fill="#F8FAFC"
-                />
-            </svg>
-        </div>
-        <h2>Ready to get more clients from your website?</h2>
-        <p>Let’s build something that actually works for your firm.</p>
-        <a href="contact.html" class="primary-btn">Get in Touch</a>
-        <div class="section-separator">
-            <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 900 650">
+                    <!-- BACK LAYER (soft depth, extended to avoid blur cut) -->
+                    <g style="filter: blur(10px);">
+                        <path 
+                            d="M0 520L37.5 516.7C75 513.3 150 506.7 225 507C300 507.3 375 514.7 450 521.3C525 528 600 534 675 530.5C750 527 825 514 862.5 507.5L900 501L900 650L0 650Z"
+                            fill="#F8FAFC"
+                            opacity="0.35"
+                        />
+                    </g>
 
-                <!-- BACK LAYER (soft depth, extended to avoid blur cut) -->
-                <g style="filter: blur(10px);">
+                    <!-- FRONT LAYER (clean edge) -->
                     <path 
-                        d="M0 520L37.5 516.7C75 513.3 150 506.7 225 507C300 507.3 375 514.7 450 521.3C525 528 600 534 675 530.5C750 527 825 514 862.5 507.5L900 501L900 650L0 650Z"
+                        d="M0 540L37.5 536.7C75 533.3 150 526.7 225 527C300 527.3 375 534.7 450 541.3C525 548 600 554 675 550.5C750 547 825 534 862.5 527.5L900 521L900 650L0 650Z"
                         fill="#F8FAFC"
-                        opacity="0.35"
                     />
-                </g>
 
-                <!-- FRONT LAYER (clean edge) -->
-                <path 
-                    d="M0 540L37.5 536.7C75 533.3 150 526.7 225 527C300 527.3 375 534.7 450 541.3C525 548 600 554 675 550.5C750 547 825 534 862.5 527.5L900 521L900 650L0 650Z"
-                    fill="#F8FAFC"
-                />
-
-            </svg>        
+                </svg>        
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
 
     <footer>
-        <div class="footer container">
-            <div class="footer-decor-line"></div>
-            <div class="footer-logo">
-                <a href="index.html"><img src="assets/logos/transpatent-logo.png" alt="Site Logo"></a>
-            </div>
-            <div class="footer-content">
-                <div class="footer-quick-links">
-                    <h4>Quick Links</h4>
-                    <a href="index.html">Home</a>
-                    <a href="services.html">Services</a>
-                    <a href="portfolio.html">Portfolio</a>
-                    <a href="about.html">About Us</a>
-                    <a href="contact.html">Contact Us</a>
+        <div class="footer section">
+            <div class="container">
+                <div class="footer-decor-line"></div>
+                <div class="footer-logo">
+                    <a href="index.html"><img src="assets/logos/transpatent-logo.png" alt="Site Logo"></a>
                 </div>
-                <div class="footer-contact">
-                    <h4>Contact</h4>
-                    <a href="contact.html">Contact Form</a>
-                    <p>Tel: <a href="tel: 0894210084">0894210084</a></p>
-                    <p>Email: <a href="mailto: e.grotuzas@gmail.com">e.grotuzas@gmail.com</a></p>
+                <div class="footer-content">
+                    <div class="footer-quick-links">
+                        <h4>Quick Links</h4>
+                        <a href="index.html">Home</a>
+                        <a href="services.html">Services</a>
+                        <a href="portfolio.html">Portfolio</a>
+                        <a href="about.html">About Us</a>
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Contact</h4>
+                        <a href="contact.html">Contact Form</a>
+                        <p>Tel: <a href="tel: 0894210084">0894210084</a></p>
+                        <p>Email: <a href="mailto: e.grotuzas@gmail.com">e.grotuzas@gmail.com</a></p>
+                    </div>
+                    <div class="footer-location">
+                        <h4>Location</h4>
+                        <p>Mallow,</p>
+                        <p>Co. Cork,</p>
+                        <p>Ireland</p>
+                    </div>
+                    
                 </div>
-                <div class="footer-location">
-                    <h4>Location</h4>
-                    <p>Mallow,</p>
-                    <p>Co. Cork,</p>
-                    <p>Ireland</p>
-                </div>
-                
             </div>
         </div>
     </footer>
