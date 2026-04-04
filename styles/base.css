@@ -82,22 +82,23 @@ button {
 /* ---------------------------- VARIABLES ------------------------------- */
 :root {
     /* Colors */
-    --color-main-bg: #F8FAFC;
-    --color-section-alt: #F1F5F9;
-    --color-text: #0F172A;
-    --color-accent-primary: #60A5FA;
-    --color-accent-secondary: #F472B6;
-    --color-secondary-light: #E5E7EB;
-    --color-secondary-medium: #CBD5E1;
-    --color-secondary-dark: #64748B;
+    --color-main-bg: #F1F5F9;
+    --color-section-alt: #E2E8F0;
+    --color-text: #020617;
+
+    --color-accent-primary: #0EA5E9;
+    --color-accent-secondary: #94A3B8;
+
+    --color-secondary-light: #E0F2FE;
+    --color-secondary-medium: #7DD3FC;
+    --color-secondary-dark: #0369A1;
 
     --color-text-muted: #475569;
 
     --color-glass-light: rgba(255,255,255,0.6);
-    --color-glass-medium: rgba(255,255,255,0.4);
+    --color-glass-medium: rgba(255,255,255,0.35);
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, #DBEAFE, #FCE7F3);
+    --gradient-primary: linear-gradient(135deg, #38BDF8, #64748B);
 
     /* Typography */
     --font-primary: 'Inter', sans-serif;
@@ -197,6 +198,11 @@ h5 {
 
 p {
     font-size: var(--fs-body);
+}
+
+.sub-text {
+    color: var(--color-text-muted);
+    font-size: var(--fs-h5);
 }
 
 /* ---------------------------- LAYOUT SYSTEM ------------------------------- */

@@ -1,6 +1,7 @@
 const toggle = document.getElementById("navToggle");
 const nav = document.getElementById("navMenu");
 const overlay = document.getElementById("overlay");
+let scrollY = 0;
 
 // MENU OPEN/CLOSE
 function openMenu() {

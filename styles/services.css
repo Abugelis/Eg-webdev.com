@@ -1,0 +1,398 @@
+.service-hero {
+    padding-bottom: 8rem;
+}
+
+.services-item h3 {
+    text-align: center;
+}
+
+.service-highlight {
+    color: var(--color-accent-secondary);
+    font-weight: 500;
+}
+
+/* ------------- Benefits ------------------*/
+
+.benefits-section {
+    background: var(--gradient-primary);
+    position: relative;
+    padding: 8rem 0;
+}
+
+.benefits-section h2 {
+    padding-bottom: 2rem;
+}
+
+.benefits-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.benefits-item {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.benefits-item svg {
+    height: 30px;
+    width: auto;
+    color: var(--color-secondary-medium);
+}
+
+/*----------------- Pricing ------------------*/
+
+.pricing-section h2 {
+    padding-bottom: 2rem;
+}
+
+.pricing-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    z-index: 1;
+}
+
+.pricing-card,
+.pricing-card-mid {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.pricing-card {
+    margin-left: 4rem;
+}
+
+.pricing-card > *,
+.pricing-card-mid > * {
+    position: relative;
+    z-index: 1;
+    max-width: 300px;
+}
+
+.pricing-card-mid::before {
+    content: "";
+    position: absolute;
+    width: 142vw;
+    height: 40vh;
+
+    left: -200px;
+    top: -0.9rem;
+    transform: none;
+    background: var(--gradient-primary);
+    border-radius: 200px;
+    z-index: 0;
+}
+
+.pricing-card::before {
+    content: "";
+    position: absolute;
+    width: 142vw;
+    height: 40vh;
+
+    right: -200px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--gradient-primary);
+    border-radius: 200px;
+    z-index: 0;
+    overflow: hidden;
+}
+
+
+.card-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-bottom a {
+    height: fit-content;
+    width: 8rem;
+    text-align: center;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+}
+
+.price-label {
+    color: var(--color-secondary-medium);
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.price-tag {
+    display: flex;
+    flex-direction: row;
+}
+
+.price-tag svg {
+    height: 30px;
+    width: auto;
+    color: var(--color-secondary-dark);
+}
+
+/* ---------------- FAQ ---------------------*/
+
+.faq-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq h2 {
+    padding-bottom: 2rem;
+}
+
+.faq-item {
+    border-bottom: 1px solid var(--color-secondary-medium);
+    margin-bottom: 1rem;
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-text);
+}
+
+.faq-icon {
+    font-size: 1.2rem;
+    transition: transform 0.3s;
+    color: var(--color-secondary-dark);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.faq-answer p {
+    margin: 0.5rem 0;
+}
+
+@media (min-width: 768px) {
+
+    .pricing-section h2 {
+        padding-bottom: 6rem;
+    }
+
+    .pricing-card {
+        margin-left: 20rem;
+    }
+
+  
+    .pricing-card > *,
+    .pricing-card-mid > * {
+        position: relative;
+        z-index: 1;
+        max-width: 300px;
+    }
+
+    .pricing-card-mid::before {
+        width: 120vw;
+        height: 50vh;
+        left: -250px;
+        top: -50px;
+    }
+
+    .pricing-card::before {
+        width: 120vw;
+        height: 50vh;
+        right: -250px;
+    }
+
+
+    .pricing-list { 
+        gap: 10rem;
+    }
+
+    .pricing-card-mid > * {
+        max-width: 500px;
+    }
+
+    .pricing-card > * {
+        min-width: 500px;
+        
+    }
+    
+    .pricing-card {
+        margin-left: 11rem;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .service-hero .hero-content {
+        max-width: 800px;
+    }
+
+    .pricing-card-mid::before {
+        width: 110vw;
+        height: 50vh;
+        left: -250px;
+        top: -60px;
+    }
+
+    .pricing-card::before {
+        width: 110vw;
+        height: 50vh;
+        right: -250px;
+    }
+
+    .pricing-card-mid > * {
+        max-width: 600px;
+    }
+
+    .pricing-card > * {
+        min-width: 600px;
+        
+    }
+
+    .card-bottom a {
+        width: 9rem;
+    }
+
+    .pricing-list { 
+        gap: 12rem;
+    }
+
+    .pricing-card {
+        margin-left: 18rem;
+    }
+
+    .faq-question {
+        font-size: var(--fs-h5);
+    }
+
+    .faq-answer p{
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .service-hero {
+        padding-bottom: 14rem;
+    }
+
+    .service-hero .section-separator svg{
+        margin-bottom: -1px;
+    }
+
+    .benefits-section .section-separator svg {
+        margin-bottom: -1px;
+    }
+
+    .benefits-section .section-separator.top svg {
+        margin-top: -1px;
+    }
+
+    .final-cta .section-separator svg {
+        margin-bottom: -1px;
+    }
+
+    .final-cta .section-separator.top svg {
+        margin-top: -1px;
+    }
+
+    .pricing-card-mid::before {
+        width: 110vw;
+        height: 50vh;
+        left: -400px;
+        top: -60px;
+    }
+
+    .pricing-card::before {
+        width: 110vw;
+        height: 50vh;
+        right: -400px;
+    }
+
+    .pricing-card-mid > * {
+        max-width: 800px;
+    }
+
+    .pricing-card > * {
+        min-width: 760px;
+        
+    }
+
+    .card-bottom a {
+        width: 12rem;
+    }
+
+    .benefits-section {
+        padding: 10rem 0;
+    }
+}
+
+@media (min-width: 1920px) {
+
+    .service-hero .hero-content {
+        max-width: 1400px;
+        padding-top: 4rem;
+    }
+
+    .service-hero {
+        padding-bottom: 20rem;
+    }
+
+    .benefits-section {
+        padding: 12rem 0;
+    }
+
+    .benefits-list {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .pricing-list { 
+        gap: 14rem;
+    }
+
+    .pricing-card-mid::before {
+        width: 80vw;
+        height: 50vh;
+        left: -400px;
+        top: -80px;
+    }
+
+    .pricing-card::before {
+        width: 80vw;
+        height: 50vh;
+        right: -400px;
+    }
+
+    .pricing-card-mid > * {
+        max-width: 800px;
+    }
+
+    .pricing-card > * {
+        min-width: 800px;
+    }
+
+    .pricing-card {
+        margin-left: 49rem;
+    }
+
+    .faq {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 4rem 0;
+    }
+}
