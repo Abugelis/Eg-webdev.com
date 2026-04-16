@@ -1,0 +1,26 @@
+.about-hero {
+    padding-bottom: 8rem;
+}
+
+@media (min-width: 1024px) {
+
+    .about-hero {
+        padding-bottom: 8rem;
+    }
+
+    .about-hero .hero-content {
+        max-width: 800px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .about-hero {
+        padding-bottom: 14rem;
+    }
+}
+
+@media (min-width: 1920px) {
+    .about-hero {
+        padding-bottom: 16rem;
+    }
+}

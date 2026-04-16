@@ -76,11 +76,12 @@
     content: "";
     position: absolute;
     width: 142vw;
-    height: 40vh;
+
+    top: 0;
+    bottom: 0;
 
     left: -200px;
-    top: -0.9rem;
-    transform: none;
+
     background: var(--gradient-primary);
     border-radius: 200px;
     z-index: 0;
@@ -90,15 +91,15 @@
     content: "";
     position: absolute;
     width: 142vw;
-    height: 40vh;
+
+    top: 0;
+    bottom: 0;
 
     right: -200px;
-    top: 50%;
-    transform: translateY(-50%);
+
     background: var(--gradient-primary);
     border-radius: 200px;
     z-index: 0;
-    overflow: hidden;
 }
 
 
@@ -112,6 +113,7 @@
     height: fit-content;
     width: 8rem;
     text-align: center;
+
 }
 
 .price {
@@ -203,22 +205,19 @@
         max-width: 300px;
     }
 
-    .pricing-card-mid::before {
-        width: 120vw;
-        height: 50vh;
-        left: -250px;
-        top: -50px;
+    .pricing-card::before {
+        width: 110vw;
+        right: -250px;
     }
 
-    .pricing-card::before {
-        width: 120vw;
-        height: 50vh;
-        right: -250px;
+    .pricing-card-mid::before {
+        width: 110vw;
+        left: -250px;
     }
 
 
     .pricing-list { 
-        gap: 10rem;
+        gap: 4rem;
     }
 
     .pricing-card-mid > * {
@@ -241,17 +240,14 @@
         max-width: 800px;
     }
 
-    .pricing-card-mid::before {
-        width: 110vw;
-        height: 50vh;
-        left: -250px;
-        top: -60px;
+    .pricing-card::before {
+        width: 100vw;
+        right: -300px;
     }
 
-    .pricing-card::before {
-        width: 110vw;
-        height: 50vh;
-        right: -250px;
+    .pricing-card-mid::before {
+        width: 100vw;
+        left: -300px;
     }
 
     .pricing-card-mid > * {
@@ -265,10 +261,6 @@
 
     .card-bottom a {
         width: 9rem;
-    }
-
-    .pricing-list { 
-        gap: 12rem;
     }
 
     .pricing-card {
@@ -310,17 +302,14 @@
         margin-top: -1px;
     }
 
-    .pricing-card-mid::before {
-        width: 110vw;
-        height: 50vh;
-        left: -400px;
-        top: -60px;
+    .pricing-card::before {
+        width: 90vw;
+        right: -350px;
     }
 
-    .pricing-card::before {
-        width: 110vw;
-        height: 50vh;
-        right: -400px;
+    .pricing-card-mid::before {
+        width: 90vw;
+        left: -350px;
     }
 
     .pricing-card-mid > * {
@@ -359,10 +348,6 @@
     .benefits-list {
         display: grid;
         grid-template-columns: repeat(2,1fr);
-    }
-
-    .pricing-list { 
-        gap: 14rem;
     }
 
     .pricing-card-mid::before {

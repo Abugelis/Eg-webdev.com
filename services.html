@@ -3,6 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional, modern websites for law firms — designed to build trust, load fast, and turn visitors into clients.">
+
+    <!-- Open Graph / Social Preview -->
+    <meta property="og:title" content="EG Web Dev">
+    <meta property="og:description" content="Professional, modern websites for law firms — designed to build trust, load fast, and turn visitors into clients.">
+    <meta property="og:image" content="https://eg-webdev.com/assets/logos/logo.webp">
+    <meta property="og:url" content="https://eg-webdev.com/">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" type="image/x-icon" href="https://eg-webdev.com/assets/logos/logo.ico">
     
     <title>EG Web Dev</title>
 
@@ -15,13 +25,24 @@
     <link rel="stylesheet" href="styles/services.css">
 
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PFC236X6GZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PFC236X6GZ');
+</script>
+
 <body>
     <!-- Navigation -->
     <header class="section">
         <div class="container">
-            <a href="index.html"><img src="assets/logos/transpatent-logo.png" alt="Logo"></a>
+            <a href="index.html"><img src="assets/logos/transpatent-logo.webp" alt="Logo"></a>
 
-            <button type="button" class="nav-toggle" id="navToggle">
+            <button type="button" class="nav-toggle" id="navToggle" aria-label="Open navigation menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -40,376 +61,380 @@
     </header>
     <div class="overlay" id="overlay"></div>
 
-    <!-- Hero section -->
+    <main>
+        <!-- Hero section -->
 
-    <section class="hero-section service-hero section flex">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Websites That Bring You More Clients</h1>
-                <p>Designed specifically for solicitors and small law firms in Ireland</p>
-                <a href="#" class="primary-btn">Get a Quote</a>
-            </div>
-            
-            <div class="section-separator">
-                <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 900 650">
+        <section class="hero-section service-hero section flex">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Websites That Bring You More Clients</h1>
+                    <p>Designed specifically for solicitors and small law firms in Ireland</p>
+                    <a href="contact.html" class="primary-btn">Get in Touch</a>
+                </div>
+                
+                <div class="section-separator">
+                    <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 900 650">
 
-                    <!-- BACK LAYER (soft depth, extended to avoid blur cut) -->
-                    <g style="filter: blur(10px);">
+                        <!-- BACK LAYER (soft depth, extended to avoid blur cut) -->
+                        <g style="filter: blur(10px);">
+                            <path 
+                                d="M0 520L37.5 516.7C75 513.3 150 506.7 225 507C300 507.3 375 514.7 450 521.3C525 528 600 534 675 530.5C750 527 825 514 862.5 507.5L900 501L900 650L0 650Z"
+                                fill="var(--color-section-alt)"
+                                opacity="0.35"
+                            />
+                        </g>
+
+                        <!-- FRONT LAYER (clean edge) -->
                         <path 
-                            d="M0 520L37.5 516.7C75 513.3 150 506.7 225 507C300 507.3 375 514.7 450 521.3C525 528 600 534 675 530.5C750 527 825 514 862.5 507.5L900 501L900 650L0 650Z"
-                            fill="var(--color-section-alt)"
-                            opacity="0.35"
+                            d="M0 540L37.5 536.7C75 533.3 150 526.7 225 527C300 527.3 375 534.7 450 541.3C525 548 600 554 675 550.5C750 547 825 534 862.5 527.5L900 521L900 650L0 650Z"
+                            fill="var(--color-main-bg)"
                         />
-                    </g>
 
-                    <!-- FRONT LAYER (clean edge) -->
-                    <path 
-                        d="M0 540L37.5 536.7C75 533.3 150 526.7 225 527C300 527.3 375 534.7 450 541.3C525 548 600 554 675 550.5C750 547 825 534 862.5 527.5L900 521L900 650L0 650Z"
-                        fill="var(--color-main-bg)"
-                    />
-
-                </svg>        
-            </div>
-        </div>
-    </section>
-
-    <!-- Services -->
-
-    <section class="service-section section">
-        <div class="container">
-            <span class="section-mark"></span>
-
-            <h2>Services Designed to Bring You More Clients</h2>
-            <p>Your website should do more than just exist — it should build trust, guide visitors, and turn them into enquiries.</p>
-
-            <div class="services-grid">
-
-                <div class="service-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" ><path d="m11 10 3 3" /><path d="M6.5 21A3.5 3.5 0 1 0 3 17.5a2.62 2.62 0 0 1-.708 1.792A1 1 0 0 0 3 21z" /><path d="M9.969 17.031 21.378 5.624a1 1 0 0 0-3.002-3.002L6.967 14.031" /></svg>
-                    <h3>Modern Website Design</h3>
-                    <p class="service-highlight">Make a strong first impression.</p>
-                    <p>Your website is often the first interaction a potential client has with your firm. I design clean, modern layouts that reflect professionalism and immediately build trust.</p>
-                </div>
-
-                <div class="service-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" ><path d="M12 19h8" /><path d="m4 17 6-6-6-6" /></svg>
-                    <h3>Fast & Reliable Development</h3>
-                    <p class="service-highlight">Keep visitors from leaving.</p>
-                    <p>Slow websites lose clients. I build fast, lightweight sites that load quickly and perform reliably, so visitors stay and explore your services.</p>
-                </div>
-
-                <div class="service-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" ><path d="M4 10a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M6 4v4" /><path d="M6 12v8" /><path d="M13.199 14.399a2 2 0 1 0 -1.199 3.601" /><path d="M12 4v10" /><path d="M12 18v2" /><path d="M16 7a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M18 4v1" /><path d="M18 9v2.5" /><path d="M19.001 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M19.001 15.5v1.5" /><path d="M19.001 21v1.5" /><path d="M22.032 17.25l-1.299 .75" /><path d="M17.27 20l-1.3 .75" /><path d="M15.97 17.25l1.3 .75" /><path d="M20.733 20l1.3 .75" /></svg>
-                    <h3>Mobile-First Experience</h3>
-                    <p class="service-highlight">Reach clients on any device.</p>
-                    <p>Most people search for legal services on their phones. Your website will look and work perfectly on mobile, ensuring a smooth experience for every visitor.</p>
-                </div>
-
-                <div class="service-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 8h-3a1 1 0 0 0 -1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-3" /><path d="M14 16h-4v-8h4" /><path d="M11 12h2" /><path d="M17 8m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" /></svg>
-                    <h3>Client - Focused Structure</h3>
-                    <p class="service-highlight">Make it easy to get in touch.</p>
-                    <p>Your services, contact details, and key information are structured clearly, so potential clients can quickly find what they need and take action.</p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="benefits-section section">
-        <div class="container">
-            <div class="section-separator top">
-                <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 900 650">
-
-                    <g style="filter: blur(10px);">
-                        <path 
-                            d="M0 520L37.5 516.7C75 513.3 150 506.7 225 507C300 507.3 375 514.7 450 521.3C525 528 600 534 675 530.5C750 527 825 514 862.5 507.5L900 501L900 650L0 650Z"
-                            fill="var(--color-section-alt)"
-                            opacity="0.35"
-                        />
-                    </g>
-
-                    <path 
-                        d="M0 540L37.5 536.7C75 533.3 150 526.7 225 527C300 527.3 375 534.7 450 541.3C525 548 600 554 675 550.5C750 547 825 534 862.5 527.5L900 521L900 650L0 650Z"
-                        fill="var(--color-main-bg)"
-                    />
-                </svg>
-            </div>
-
-            <span class="section-mark"></span>
-            <h2>What You Actually Get</h2>
-            
-            <div class="benefits-list">
-                <div class="benefits-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>
-                    <p>Custom design (no templates)</p>
-                </div>
-                <div class="benefits-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>
-                    <p>Up to 10 pages (Home, Services, Contact, etc.)</p>
-                </div>
-                <div class="benefits-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>
-                    <p>Contact form setup</p>
-                </div>
-                <div class="benefits-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>
-                    <p>Basic SEO setup</p>
-                </div>
-                <div class="benefits-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>
-                    <p>Fast loading performance</p>
-                </div>
-                <div class="benefits-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>
-                    <p>Mobile optimisation</p>
-                </div>
-                <div class="benefits-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>
-                    <p>2 rounds of revisions</p>
+                    </svg>        
                 </div>
             </div>
+        </section>
 
-            <div class="section-separator">
-                <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 900 650">
+        <!-- Services -->
 
-                    <!-- BACK LAYER (soft depth, extended to avoid blur cut) -->
-                    <g style="filter: blur(10px);">
-                        <path 
-                            d="M0 520L37.5 516.7C75 513.3 150 506.7 225 507C300 507.3 375 514.7 450 521.3C525 528 600 534 675 530.5C750 527 825 514 862.5 507.5L900 501L900 650L0 650Z"
-                            fill="var(--color-section-alt)"
-                            opacity="0.35"
-                        />
-                    </g>
-
-                    <!-- FRONT LAYER (clean edge) -->
-                    <path 
-                        d="M0 540L37.5 536.7C75 533.3 150 526.7 225 527C300 527.3 375 534.7 450 541.3C525 548 600 554 675 550.5C750 547 825 534 862.5 527.5L900 521L900 650L0 650Z"
-                        fill="var(--color-main-bg)"
-                    />
-
-                </svg>        
-            </div>
-        </div>
-    </section>
-
-    <section class="pricing-section section">
-        <div class="container">
-            <span class="section-mark"></span>
-            <h2>Pricing</h2>
-            <div class="pricing-list">
-                <div class="pricing-card">
-                    <h3>Classic Design</h3>
-                    <p>Designed for law firms that value a traditional, professional presence. Clean, structured layouts focused on clarity, trust, and making it easy for clients to get in touch.</p>
-                    <div class="card-bottom">
-                        <div class="price">
-                            <p class="price-label">Starting from:</p>
-                            <div class="price-tag">
-                                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M11 6C10.4477 6 10 5.55228 10 5C10 4.44772 10.4477 4 11 4C11.5523 4 12 4.44772 12 5C12 5.55228 11.5523 6 11 6ZM2.58722 10.1357C1.80426 9.3566 1.80426 8.0934 2.58722 7.31428L7.32688 2.59785C7.70082 2.22574 8.20735 2.01572 8.73617 2.01353L11.9867 2.00002C13.1029 1.99538 14.008 2.89877 13.9999 4.00947L13.9755 7.3725C13.9717 7.89662 13.7608 8.3982 13.3884 8.76882L8.71865 13.4157C7.93569 14.1948 6.66627 14.1948 5.88331 13.4157L2.58722 10.1357ZM3.29605 8.01964C2.90458 8.4092 2.90458 9.0408 3.29606 9.43036L6.59214 12.7103C6.98362 13.0999 7.61834 13.0999 8.00982 12.7103L12.6795 8.06346C12.8658 7.87815 12.9712 7.62736 12.9731 7.3653L12.9975 4.00227C13.0016 3.44692 12.549 2.99522 11.9909 2.99754L8.74036 3.01105C8.47595 3.01215 8.22268 3.11716 8.03571 3.30321L3.29605 8.01964Z"/></svg>
-                                <h4>1500€</h4>
-                            </div>
-                        </div>
-                        <a href="#" class="primary-btn">Designs</a>
-                    </div>
-                    
-                </div>
-                <div class="pricing-card-mid">
-                    <h3>Modern Design</h3>
-                    <p>Designed for law firms that want to stand out with a modern, polished feel. Subtle animations and strong visual hierarchy help guide visitors and turn them into enquiries.</p>
-                    <div class="card-bottom">
-                        <div class="price">
-                            <p class="price-label">Starting from:</p>
-                            <div class="price-tag">
-                                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M11 6C10.4477 6 10 5.55228 10 5C10 4.44772 10.4477 4 11 4C11.5523 4 12 4.44772 12 5C12 5.55228 11.5523 6 11 6ZM2.58722 10.1357C1.80426 9.3566 1.80426 8.0934 2.58722 7.31428L7.32688 2.59785C7.70082 2.22574 8.20735 2.01572 8.73617 2.01353L11.9867 2.00002C13.1029 1.99538 14.008 2.89877 13.9999 4.00947L13.9755 7.3725C13.9717 7.89662 13.7608 8.3982 13.3884 8.76882L8.71865 13.4157C7.93569 14.1948 6.66627 14.1948 5.88331 13.4157L2.58722 10.1357ZM3.29605 8.01964C2.90458 8.4092 2.90458 9.0408 3.29606 9.43036L6.59214 12.7103C6.98362 13.0999 7.61834 13.0999 8.00982 12.7103L12.6795 8.06346C12.8658 7.87815 12.9712 7.62736 12.9731 7.3653L12.9975 4.00227C13.0016 3.44692 12.549 2.99522 11.9909 2.99754L8.74036 3.01105C8.47595 3.01215 8.22268 3.11716 8.03571 3.30321L3.29605 8.01964Z"/></svg>
-                                <h4>1800€</h4>
-                            </div>
-                        </div>
-                        <a href="#" class="primary-btn">Designs</a>
-                    </div>
-                </div>
-                <div class="pricing-card">
-                    <h3>Custom Design</h3>
-                    <p>Built for firms with a specific vision or unique requirements. Whether you have a design in mind or need guidance, we’ll create a site tailored to your brand and goals.</p>
-                    <div class="card-bottom">
-                        <div class="price">
-                            <p class="price-label">Starting from:</p>
-                            <div class="price-tag">
-                                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M11 6C10.4477 6 10 5.55228 10 5C10 4.44772 10.4477 4 11 4C11.5523 4 12 4.44772 12 5C12 5.55228 11.5523 6 11 6ZM2.58722 10.1357C1.80426 9.3566 1.80426 8.0934 2.58722 7.31428L7.32688 2.59785C7.70082 2.22574 8.20735 2.01572 8.73617 2.01353L11.9867 2.00002C13.1029 1.99538 14.008 2.89877 13.9999 4.00947L13.9755 7.3725C13.9717 7.89662 13.7608 8.3982 13.3884 8.76882L8.71865 13.4157C7.93569 14.1948 6.66627 14.1948 5.88331 13.4157L2.58722 10.1357ZM3.29605 8.01964C2.90458 8.4092 2.90458 9.0408 3.29606 9.43036L6.59214 12.7103C6.98362 13.0999 7.61834 13.0999 8.00982 12.7103L12.6795 8.06346C12.8658 7.87815 12.9712 7.62736 12.9731 7.3653L12.9975 4.00227C13.0016 3.44692 12.549 2.99522 11.9909 2.99754L8.74036 3.01105C8.47595 3.01215 8.22268 3.11716 8.03571 3.30321L3.29605 8.01964Z"/></svg>
-                                <h4>1500€</h4>
-                            </div>
-                        </div>
-                        <a href="#" class="primary-btn">Get a Quote</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Process section -->
-    <section class="process-section section">
-        <div class="container">
-            <span class="section-mark"></span>
-            <h2>How I Work</h2>
-            <h4 class="sub-text">A simple, clear process designed to get your firm online quickly and professionally.</h4>
-
-            <div class="process-steps">
-                <div class="process-step">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"/></svg>
-                    <h3>Consultation</h3>
-                    <p>We discuss your firm, your goals, and what your website needs to achieve.</p>
-                </div>
-
-                <div class="process-step">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm88-29.84q.06-2.16,0-4.32l14.92-18.64a8,8,0,0,0,1.48-7.06,107.21,107.21,0,0,0-10.88-26.25,8,8,0,0,0-6-3.93l-23.72-2.64q-1.48-1.56-3-3L186,40.54a8,8,0,0,0-3.94-6,107.71,107.71,0,0,0-26.25-10.87,8,8,0,0,0-7.06,1.49L130.16,40Q128,40,125.84,40L107.2,25.11a8,8,0,0,0-7.06-1.48A107.6,107.6,0,0,0,73.89,34.51a8,8,0,0,0-3.93,6L67.32,64.27q-1.56,1.49-3,3L40.54,70a8,8,0,0,0-6,3.94,107.71,107.71,0,0,0-10.87,26.25,8,8,0,0,0,1.49,7.06L40,125.84Q40,128,40,130.16L25.11,148.8a8,8,0,0,0-1.48,7.06,107.21,107.21,0,0,0,10.88,26.25,8,8,0,0,0,6,3.93l23.72,2.64q1.49,1.56,3,3L70,215.46a8,8,0,0,0,3.94,6,107.71,107.71,0,0,0,26.25,10.87,8,8,0,0,0,7.06-1.49L125.84,216q2.16.06,4.32,0l18.64,14.92a8,8,0,0,0,7.06,1.48,107.21,107.21,0,0,0,26.25-10.88,8,8,0,0,0,3.93-6l2.64-23.72q1.56-1.48,3-3L215.46,186a8,8,0,0,0,6-3.94,107.71,107.71,0,0,0,10.87-26.25,8,8,0,0,0-1.49-7.06Zm-16.1-6.5a73.93,73.93,0,0,1,0,8.68,8,8,0,0,0,1.74,5.48l14.19,17.73a91.57,91.57,0,0,1-6.23,15L187,173.11a8,8,0,0,0-5.1,2.64,74.11,74.11,0,0,1-6.14,6.14,8,8,0,0,0-2.64,5.1l-2.51,22.58a91.32,91.32,0,0,1-15,6.23l-17.74-14.19a8,8,0,0,0-5-1.75h-.48a73.93,73.93,0,0,1-8.68,0,8,8,0,0,0-5.48,1.74L100.45,215.8a91.57,91.57,0,0,1-15-6.23L82.89,187a8,8,0,0,0-2.64-5.1,74.11,74.11,0,0,1-6.14-6.14,8,8,0,0,0-5.1-2.64L46.43,170.6a91.32,91.32,0,0,1-6.23-15l14.19-17.74a8,8,0,0,0,1.74-5.48,73.93,73.93,0,0,1,0-8.68,8,8,0,0,0-1.74-5.48L40.2,100.45a91.57,91.57,0,0,1,6.23-15L69,82.89a8,8,0,0,0,5.1-2.64,74.11,74.11,0,0,1,6.14-6.14A8,8,0,0,0,82.89,69L85.4,46.43a91.32,91.32,0,0,1,15-6.23l17.74,14.19a8,8,0,0,0,5.48,1.74,73.93,73.93,0,0,1,8.68,0,8,8,0,0,0,5.48-1.74L155.55,40.2a91.57,91.57,0,0,1,15,6.23L173.11,69a8,8,0,0,0,2.64,5.1,74.11,74.11,0,0,1,6.14,6.14,8,8,0,0,0,5.1,2.64l22.58,2.51a91.32,91.32,0,0,1,6.23,15l-14.19,17.74A8,8,0,0,0,199.87,123.66Z"/></svg>
-                    <h3>Design & Build</h3>
-                    <p>I design and develop a modern, fast website tailored to your firm.</p>
-                </div>
-
-                <div class="process-step">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/></svg>
-                    <h3>Launch</h3>
-                    <p>Your website goes live, ready to attract and convert new clients.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="container faq-section">
-        <div class="faq">
-            <div class="faq-header">
+        <section class="service-section section">
+            <div class="container">
                 <span class="section-mark"></span>
-                <h2>FAQ</h2>
-            </div>
-            
-            <div class="faq-flex">
-                <div class="faq-item">
-                    <button class="faq-question">
-                        How long does it take to build a website?
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Most projects take between 2–4 weeks, depending on the size of the site and how quickly content is provided. I keep the process simple and communicate clearly at every step.</p>
-                    </div>
-                </div>
 
-                <div class="faq-item">
-                    <button class="faq-question">
-                        Do I need to provide the content?
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>You can provide your own content, or I can help guide you on what works best. If needed, I can also assist with structuring and refining your text to ensure it’s clear and professional.</p>
-                    </div>
-                </div>
+                <h2>Services Designed to Bring You More Clients</h2>
+                <p>Your website should do more than just exist — it should build trust, guide visitors, and turn them into enquiries.</p>
 
-                <div class="faq-item">
-                    <button class="faq-question">
-                        Can I update the website myself?
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Yes. I can build your site in a way that allows you to easily update content yourself, or I can handle updates for you if you prefer.</p>
-                    </div>
-                </div>
+                <div class="services-grid">
 
-                <div class="faq-item">
-                    <button class="faq-question">
-                        Do you offer ongoing support?
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Yes — I offer ongoing support and maintenance options to keep your website secure, updated, and running smoothly.</p>
+                    <div class="service-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" ><path d="m11 10 3 3" /><path d="M6.5 21A3.5 3.5 0 1 0 3 17.5a2.62 2.62 0 0 1-.708 1.792A1 1 0 0 0 3 21z" /><path d="M9.969 17.031 21.378 5.624a1 1 0 0 0-3.002-3.002L6.967 14.031" /></svg>
+                        <h3>Modern Website Design</h3>
+                        <p class="service-highlight">Make a strong first impression.</p>
+                        <p>Your website is often the first interaction a potential client has with your firm. I design clean, modern layouts that reflect professionalism and immediately build trust.</p>
                     </div>
-                </div>
 
-                <div class="faq-item">
-                    <button class="faq-question">
-                        What if I already have a website?
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>No problem. I can redesign your existing website to improve its appearance, performance, and usability while keeping what already works.</p>
+                    <div class="service-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" ><path d="M12 19h8" /><path d="m4 17 6-6-6-6" /></svg>
+                        <h3>Fast & Reliable Development</h3>
+                        <p class="service-highlight">Keep visitors from leaving.</p>
+                        <p>Slow websites lose clients. I build fast, lightweight sites that load quickly and perform reliably, so visitors stay and explore your services.</p>
                     </div>
-                </div>
 
-                <div class="faq-item">
-                    <button class="faq-question">
-                        Is hosting and domain included?
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Hosting and domain can be arranged for you, or I can work with your existing provider. I’ll guide you through the best option for your needs.</p>
+                    <div class="service-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" ><path d="M4 10a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M6 4v4" /><path d="M6 12v8" /><path d="M13.199 14.399a2 2 0 1 0 -1.199 3.601" /><path d="M12 4v10" /><path d="M12 18v2" /><path d="M16 7a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M18 4v1" /><path d="M18 9v2.5" /><path d="M19.001 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M19.001 15.5v1.5" /><path d="M19.001 21v1.5" /><path d="M22.032 17.25l-1.299 .75" /><path d="M17.27 20l-1.3 .75" /><path d="M15.97 17.25l1.3 .75" /><path d="M20.733 20l1.3 .75" /></svg>
+                        <h3>Mobile-First Experience</h3>
+                        <p class="service-highlight">Reach clients on any device.</p>
+                        <p>Most people search for legal services on their phones. Your website will look and work perfectly on mobile, ensuring a smooth experience for every visitor.</p>
                     </div>
-                </div>
 
-                <div class="faq-item">
-                    <button class="faq-question">
-                        How much does a website cost?
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Pricing depends on the scope and requirements of your project. The packages listed give a starting point, and I’m happy to provide a custom quote based on your needs.</p>
+                    <div class="service-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 8h-3a1 1 0 0 0 -1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-3" /><path d="M14 16h-4v-8h4" /><path d="M11 12h2" /><path d="M17 8m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" /></svg>
+                        <h3>Client - Focused Structure</h3>
+                        <p class="service-highlight">Make it easy to get in touch.</p>
+                        <p>Your services, contact details, and key information are structured clearly, so potential clients can quickly find what they need and take action.</p>
                     </div>
-                </div>
 
-                <div class="faq-item">
-                    <button class="faq-question">
-                        Will my website help me get more clients?
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>The goal is to create a professional, trustworthy online presence that makes it easy for potential clients to contact you. While no one can guarantee results, the site will be built with conversion and clarity in mind.</p>
-                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Final CTA section-->
-    <section class="final-cta section">
-        <div class="container">
-            <div class="section-separator top">
-                <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 900 650">
+        <section class="benefits-section section">
+            <div class="container">
+                <div class="section-separator top">
+                    <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 900 650">
 
-                    <g style="filter: blur(10px);">
+                        <g style="filter: blur(10px);">
+                            <path 
+                                d="M0 520L37.5 516.7C75 513.3 150 506.7 225 507C300 507.3 375 514.7 450 521.3C525 528 600 534 675 530.5C750 527 825 514 862.5 507.5L900 501L900 650L0 650Z"
+                                fill="var(--color-section-alt)"
+                                opacity="0.35"
+                            />
+                        </g>
+
                         <path 
-                            d="M0 520L37.5 516.7C75 513.3 150 506.7 225 507C300 507.3 375 514.7 450 521.3C525 528 600 534 675 530.5C750 527 825 514 862.5 507.5L900 501L900 650L0 650Z"
-                            fill="#F8FAFC"
-                            opacity="0.35"
+                            d="M0 540L37.5 536.7C75 533.3 150 526.7 225 527C300 527.3 375 534.7 450 541.3C525 548 600 554 675 550.5C750 547 825 534 862.5 527.5L900 521L900 650L0 650Z"
+                            fill="var(--color-main-bg)"
                         />
-                    </g>
+                    </svg>
+                </div>
 
-                    <path 
-                        d="M0 540L37.5 536.7C75 533.3 150 526.7 225 527C300 527.3 375 534.7 450 541.3C525 548 600 554 675 550.5C750 547 825 534 862.5 527.5L900 521L900 650L0 650Z"
-                        fill="var(--color-main-bg)"
-                    />
-                </svg>
-            </div>
-            <h2>Ready to get more clients from your website?</h2>
-            <p>Let’s build something that actually works for your firm.</p>
-            <a href="contact.html" class="primary-btn">Get in Touch</a>
-            <div class="section-separator">
-                <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 900 650">
+                <span class="section-mark"></span>
+                <h2>What You Actually Get</h2>
+                
+                <div class="benefits-list">
+                    <div class="benefits-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>
+                        <p>Custom design (no templates)</p>
+                    </div>
+                    <div class="benefits-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>
+                        <p>Up to 10 pages (Home, Services, Contact, etc.)</p>
+                    </div>
+                    <div class="benefits-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>
+                        <p>Contact form setup</p>
+                    </div>
+                    <div class="benefits-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>
+                        <p>Basic SEO setup</p>
+                    </div>
+                    <div class="benefits-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>
+                        <p>Fast loading performance</p>
+                    </div>
+                    <div class="benefits-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>
+                        <p>Mobile optimisation</p>
+                    </div>
+                    <div class="benefits-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>
+                        <p>2 rounds of revisions</p>
+                    </div>
+                </div>
 
-                    <!-- BACK LAYER (soft depth, extended to avoid blur cut) -->
-                    <g style="filter: blur(10px);">
+                <div class="section-separator">
+                    <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 900 650">
+
+                        <!-- BACK LAYER (soft depth, extended to avoid blur cut) -->
+                        <g style="filter: blur(10px);">
+                            <path 
+                                d="M0 520L37.5 516.7C75 513.3 150 506.7 225 507C300 507.3 375 514.7 450 521.3C525 528 600 534 675 530.5C750 527 825 514 862.5 507.5L900 501L900 650L0 650Z"
+                                fill="var(--color-section-alt)"
+                                opacity="0.35"
+                            />
+                        </g>
+
+                        <!-- FRONT LAYER (clean edge) -->
                         <path 
-                            d="M0 520L37.5 516.7C75 513.3 150 506.7 225 507C300 507.3 375 514.7 450 521.3C525 528 600 534 675 530.5C750 527 825 514 862.5 507.5L900 501L900 650L0 650Z"
-                            fill="#F8FAFC"
-                            opacity="0.35"
+                            d="M0 540L37.5 536.7C75 533.3 150 526.7 225 527C300 527.3 375 534.7 450 541.3C525 548 600 554 675 550.5C750 547 825 534 862.5 527.5L900 521L900 650L0 650Z"
+                            fill="var(--color-main-bg)"
                         />
-                    </g>
 
-                    <!-- FRONT LAYER (clean edge) -->
-                    <path 
-                        d="M0 540L37.5 536.7C75 533.3 150 526.7 225 527C300 527.3 375 534.7 450 541.3C525 548 600 554 675 550.5C750 547 825 534 862.5 527.5L900 521L900 650L0 650Z"
-                        fill="var(--color-main-bg)"
-                    />
-
-                </svg>        
+                    </svg>        
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section class="pricing-section section">
+            <div class="container">
+                <span class="section-mark"></span>
+                <h2>Pricing</h2>
+                <div class="pricing-list">
+                    <div class="pricing-card">
+                        <h3>Classic Design</h3>
+                        <p>Designed for law firms that value a traditional, professional presence. Clean, structured layouts focused on clarity, trust, and making it easy for clients to get in touch.</p>
+                        <div class="card-bottom">
+                            <div class="price">
+                                <p class="price-label">Starting from:</p>
+                                <div class="price-tag">
+                                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M11 6C10.4477 6 10 5.55228 10 5C10 4.44772 10.4477 4 11 4C11.5523 4 12 4.44772 12 5C12 5.55228 11.5523 6 11 6ZM2.58722 10.1357C1.80426 9.3566 1.80426 8.0934 2.58722 7.31428L7.32688 2.59785C7.70082 2.22574 8.20735 2.01572 8.73617 2.01353L11.9867 2.00002C13.1029 1.99538 14.008 2.89877 13.9999 4.00947L13.9755 7.3725C13.9717 7.89662 13.7608 8.3982 13.3884 8.76882L8.71865 13.4157C7.93569 14.1948 6.66627 14.1948 5.88331 13.4157L2.58722 10.1357ZM3.29605 8.01964C2.90458 8.4092 2.90458 9.0408 3.29606 9.43036L6.59214 12.7103C6.98362 13.0999 7.61834 13.0999 8.00982 12.7103L12.6795 8.06346C12.8658 7.87815 12.9712 7.62736 12.9731 7.3653L12.9975 4.00227C13.0016 3.44692 12.549 2.99522 11.9909 2.99754L8.74036 3.01105C8.47595 3.01215 8.22268 3.11716 8.03571 3.30321L3.29605 8.01964Z"/></svg>
+                                    <h4>1500€</h4>
+                                </div>
+                            </div>
+                            <a href="portfolio.html#classic" class="primary-btn">Designs</a>
+                        </div>
+                        
+                    </div>
+                    <div class="pricing-card-mid">
+                        <h3>Modern Design</h3>
+                        <p>Designed for law firms that want to stand out with a modern, polished feel. Subtle animations and strong visual hierarchy help guide visitors and turn them into enquiries.</p>
+                        <div class="card-bottom">
+                            <div class="price">
+                                <p class="price-label">Starting from:</p>
+                                <div class="price-tag">
+                                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M11 6C10.4477 6 10 5.55228 10 5C10 4.44772 10.4477 4 11 4C11.5523 4 12 4.44772 12 5C12 5.55228 11.5523 6 11 6ZM2.58722 10.1357C1.80426 9.3566 1.80426 8.0934 2.58722 7.31428L7.32688 2.59785C7.70082 2.22574 8.20735 2.01572 8.73617 2.01353L11.9867 2.00002C13.1029 1.99538 14.008 2.89877 13.9999 4.00947L13.9755 7.3725C13.9717 7.89662 13.7608 8.3982 13.3884 8.76882L8.71865 13.4157C7.93569 14.1948 6.66627 14.1948 5.88331 13.4157L2.58722 10.1357ZM3.29605 8.01964C2.90458 8.4092 2.90458 9.0408 3.29606 9.43036L6.59214 12.7103C6.98362 13.0999 7.61834 13.0999 8.00982 12.7103L12.6795 8.06346C12.8658 7.87815 12.9712 7.62736 12.9731 7.3653L12.9975 4.00227C13.0016 3.44692 12.549 2.99522 11.9909 2.99754L8.74036 3.01105C8.47595 3.01215 8.22268 3.11716 8.03571 3.30321L3.29605 8.01964Z"/></svg>
+                                    <h4>1800€</h4>
+                                </div>
+                            </div>
+                            <a href="portfolio.html#modern" class="primary-btn">Designs</a>
+                        </div>
+                    </div>
+                    <div class="pricing-card">
+                        <h3>Custom Design</h3>
+                        <p>Built for firms with a specific vision or unique requirements. Whether you have a design in mind or need guidance, we’ll create a site tailored to your brand and goals.</p>
+                        <div class="card-bottom">
+                            <div class="price">
+                                <p class="price-label">Starting from:</p>
+                                <div class="price-tag">
+                                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M11 6C10.4477 6 10 5.55228 10 5C10 4.44772 10.4477 4 11 4C11.5523 4 12 4.44772 12 5C12 5.55228 11.5523 6 11 6ZM2.58722 10.1357C1.80426 9.3566 1.80426 8.0934 2.58722 7.31428L7.32688 2.59785C7.70082 2.22574 8.20735 2.01572 8.73617 2.01353L11.9867 2.00002C13.1029 1.99538 14.008 2.89877 13.9999 4.00947L13.9755 7.3725C13.9717 7.89662 13.7608 8.3982 13.3884 8.76882L8.71865 13.4157C7.93569 14.1948 6.66627 14.1948 5.88331 13.4157L2.58722 10.1357ZM3.29605 8.01964C2.90458 8.4092 2.90458 9.0408 3.29606 9.43036L6.59214 12.7103C6.98362 13.0999 7.61834 13.0999 8.00982 12.7103L12.6795 8.06346C12.8658 7.87815 12.9712 7.62736 12.9731 7.3653L12.9975 4.00227C13.0016 3.44692 12.549 2.99522 11.9909 2.99754L8.74036 3.01105C8.47595 3.01215 8.22268 3.11716 8.03571 3.30321L3.29605 8.01964Z"/></svg>
+                                    <h4>1500€</h4>
+                                </div>
+                            </div>
+                            <a href="contact.html" class="primary-btn">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process section -->
+        <section class="process-section section">
+            <div class="container">
+                <span class="section-mark"></span>
+                <h2>How I Work</h2>
+                <p class="sub-text">A simple, clear process designed to get your firm online quickly and professionally.</p>
+
+                <div class="process-steps">
+                    <div class="process-step">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"/></svg>
+                        <h3>Consultation</h3>
+                        <p>We discuss your firm, your goals, and what your website needs to achieve.</p>
+                    </div>
+
+                    <div class="process-step">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm88-29.84q.06-2.16,0-4.32l14.92-18.64a8,8,0,0,0,1.48-7.06,107.21,107.21,0,0,0-10.88-26.25,8,8,0,0,0-6-3.93l-23.72-2.64q-1.48-1.56-3-3L186,40.54a8,8,0,0,0-3.94-6,107.71,107.71,0,0,0-26.25-10.87,8,8,0,0,0-7.06,1.49L130.16,40Q128,40,125.84,40L107.2,25.11a8,8,0,0,0-7.06-1.48A107.6,107.6,0,0,0,73.89,34.51a8,8,0,0,0-3.93,6L67.32,64.27q-1.56,1.49-3,3L40.54,70a8,8,0,0,0-6,3.94,107.71,107.71,0,0,0-10.87,26.25,8,8,0,0,0,1.49,7.06L40,125.84Q40,128,40,130.16L25.11,148.8a8,8,0,0,0-1.48,7.06,107.21,107.21,0,0,0,10.88,26.25,8,8,0,0,0,6,3.93l23.72,2.64q1.49,1.56,3,3L70,215.46a8,8,0,0,0,3.94,6,107.71,107.71,0,0,0,26.25,10.87,8,8,0,0,0,7.06-1.49L125.84,216q2.16.06,4.32,0l18.64,14.92a8,8,0,0,0,7.06,1.48,107.21,107.21,0,0,0,26.25-10.88,8,8,0,0,0,3.93-6l2.64-23.72q1.56-1.48,3-3L215.46,186a8,8,0,0,0,6-3.94,107.71,107.71,0,0,0,10.87-26.25,8,8,0,0,0-1.49-7.06Zm-16.1-6.5a73.93,73.93,0,0,1,0,8.68,8,8,0,0,0,1.74,5.48l14.19,17.73a91.57,91.57,0,0,1-6.23,15L187,173.11a8,8,0,0,0-5.1,2.64,74.11,74.11,0,0,1-6.14,6.14,8,8,0,0,0-2.64,5.1l-2.51,22.58a91.32,91.32,0,0,1-15,6.23l-17.74-14.19a8,8,0,0,0-5-1.75h-.48a73.93,73.93,0,0,1-8.68,0,8,8,0,0,0-5.48,1.74L100.45,215.8a91.57,91.57,0,0,1-15-6.23L82.89,187a8,8,0,0,0-2.64-5.1,74.11,74.11,0,0,1-6.14-6.14,8,8,0,0,0-5.1-2.64L46.43,170.6a91.32,91.32,0,0,1-6.23-15l14.19-17.74a8,8,0,0,0,1.74-5.48,73.93,73.93,0,0,1,0-8.68,8,8,0,0,0-1.74-5.48L40.2,100.45a91.57,91.57,0,0,1,6.23-15L69,82.89a8,8,0,0,0,5.1-2.64,74.11,74.11,0,0,1,6.14-6.14A8,8,0,0,0,82.89,69L85.4,46.43a91.32,91.32,0,0,1,15-6.23l17.74,14.19a8,8,0,0,0,5.48,1.74,73.93,73.93,0,0,1,8.68,0,8,8,0,0,0,5.48-1.74L155.55,40.2a91.57,91.57,0,0,1,15,6.23L173.11,69a8,8,0,0,0,2.64,5.1,74.11,74.11,0,0,1,6.14,6.14,8,8,0,0,0,5.1,2.64l22.58,2.51a91.32,91.32,0,0,1,6.23,15l-14.19,17.74A8,8,0,0,0,199.87,123.66Z"/></svg>
+                        <h3>Design & Build</h3>
+                        <p>I design and develop a modern, fast website tailored to your firm.</p>
+                    </div>
+
+                    <div class="process-step">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/></svg>
+                        <h3>Launch</h3>
+                        <p>Your website goes live, ready to attract and convert new clients.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container faq-section">
+            <div class="faq">
+                <div class="faq-header">
+                    <span class="section-mark"></span>
+                    <h2>FAQ</h2>
+                </div>
+                
+                <div class="faq-flex">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            How long does it take to build a website?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Most projects take between 2–4 weeks, depending on the size of the site and how quickly content is provided. I keep the process simple and communicate clearly at every step.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Do I need to provide the content?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>You can provide your own content, or I can help guide you on what works best. If needed, I can also assist with structuring and refining your text to ensure it’s clear and professional.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Can I update the website myself?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Your website is built as a custom-coded solution rather than using a page builder, which allows for better performance, security, and a more professional result.
+                                <br><br>
+                                If you ever need changes or updates, I can handle them quickly for you.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Do you offer ongoing support?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes — I offer ongoing support and maintenance options to keep your website secure, updated, and running smoothly.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            What if I already have a website?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No problem. I can redesign your existing website to improve its appearance, performance, and usability while keeping what already works.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Is hosting and domain included?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Hosting and domain can be arranged for you, or I can work with your existing provider. I’ll guide you through the best option for your needs.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            How much does a website cost?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Pricing depends on the scope and requirements of your project. The packages listed give a starting point, and I’m happy to provide a custom quote based on your needs.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Will my website help me get more clients?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>The goal is to create a professional, trustworthy online presence that makes it easy for potential clients to contact you. While no one can guarantee results, the site will be built with conversion and clarity in mind.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA section-->
+        <section class="final-cta section">
+            <div class="container">
+                <div class="section-separator top">
+                    <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 900 650">
+
+                        <g style="filter: blur(10px);">
+                            <path 
+                                d="M0 520L37.5 516.7C75 513.3 150 506.7 225 507C300 507.3 375 514.7 450 521.3C525 528 600 534 675 530.5C750 527 825 514 862.5 507.5L900 501L900 650L0 650Z"
+                                fill="#F8FAFC"
+                                opacity="0.35"
+                            />
+                        </g>
+
+                        <path 
+                            d="M0 540L37.5 536.7C75 533.3 150 526.7 225 527C300 527.3 375 534.7 450 541.3C525 548 600 554 675 550.5C750 547 825 534 862.5 527.5L900 521L900 650L0 650Z"
+                            fill="var(--color-main-bg)"
+                        />
+                    </svg>
+                </div>
+                <h2>Ready to get more clients from your website?</h2>
+                <p>Let’s build something that actually works for your firm.</p>
+                <a href="contact.html" class="primary-btn">Get in Touch</a>
+                <div class="section-separator">
+                    <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 900 650">
+
+                        <!-- BACK LAYER (soft depth, extended to avoid blur cut) -->
+                        <g style="filter: blur(10px);">
+                            <path 
+                                d="M0 520L37.5 516.7C75 513.3 150 506.7 225 507C300 507.3 375 514.7 450 521.3C525 528 600 534 675 530.5C750 527 825 514 862.5 507.5L900 501L900 650L0 650Z"
+                                fill="#F8FAFC"
+                                opacity="0.35"
+                            />
+                        </g>
+
+                        <!-- FRONT LAYER (clean edge) -->
+                        <path 
+                            d="M0 540L37.5 536.7C75 533.3 150 526.7 225 527C300 527.3 375 534.7 450 541.3C525 548 600 554 675 550.5C750 547 825 534 862.5 527.5L900 521L900 650L0 650Z"
+                            fill="var(--color-main-bg)"
+                        />
+
+                    </svg>        
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
 
@@ -418,7 +443,7 @@
             <div class="container">
                 <div class="footer-decor-line"></div>
                 <div class="footer-logo">
-                    <a href="index.html"><img src="assets/logos/transpatent-logo.png" alt="Site Logo"></a>
+                    <a href="index.html"><img src="assets/logos/transpatent-logo.webp" alt="Site Logo"></a>
                 </div>
                 <div class="footer-content">
                     <div class="footer-quick-links">

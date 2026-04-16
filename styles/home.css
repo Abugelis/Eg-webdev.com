@@ -23,6 +23,7 @@
     left: 0;
     width: 100%;
     line-height: 0; /* removes weird spacing */
+    pointer-events: none;
 }
 
 .section-separator svg {
@@ -397,6 +398,7 @@
 .section-separator.top {
     top: 0;
     bottom: auto;
+    pointer-events: none;
 }
 
 .section-separator.top svg {

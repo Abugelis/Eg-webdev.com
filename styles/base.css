@@ -203,6 +203,7 @@ p {
 .sub-text {
     color: var(--color-text-muted);
     font-size: var(--fs-h5);
+    font-family: var(--font-secondary);
 }
 
 /* ---------------------------- LAYOUT SYSTEM ------------------------------- */
