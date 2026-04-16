@@ -31,6 +31,7 @@
     padding: 1rem;
     border-radius: var(--radius);
     box-shadow: 1px 1px 20px gray;
+    gap: 1rem;
 }
 
 .portfolio-peace-header {
@@ -46,6 +47,7 @@
 .portfolio-peace-content {
     display: flex;
     flex-direction: column-reverse;
+    gap: 2rem;
 }
 
 .primary-btn {
@@ -78,5 +80,15 @@
 @media (min-width: 1920px) {
     .portfolio-hero {
         padding-bottom: 16rem;
+    }
+    
+    .design-mockup img {
+        height: auto;
+        width: 30rem;
+    }
+
+    .design-mockup {
+        display: block;
+        margin: 0 auto;
     }
 }

@@ -110,6 +110,19 @@
     font-weight: 500;
 }
 
+.form-status {
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.form-status.success {
+    color: green;
+}
+
+.form-status.error {
+    color: red;
+}
+
 @media (min-width: 768px) {
     .contact-wrapper {
         display: grid;

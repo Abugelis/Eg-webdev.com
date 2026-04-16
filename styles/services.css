@@ -352,15 +352,20 @@
 
     .pricing-card-mid::before {
         width: 80vw;
-        height: 50vh;
+        height: 35vh;
         left: -400px;
-        top: -80px;
+        top: -15px;
     }
 
     .pricing-card::before {
         width: 80vw;
-        height: 50vh;
+        height: 35vh;
         right: -400px;
+        top: -15px;
+    }
+
+    .pricing-list {
+        gap:4rem;
     }
 
     .pricing-card-mid > * {

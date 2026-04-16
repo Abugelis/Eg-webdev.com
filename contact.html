@@ -18,6 +18,59 @@
 
     <script src="scripts/nav.js" defer></script>
     <script src="scripts/faq.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "mHUYMmhIxQKuzOTZQ",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            const form = document.getElementById('contact-form');
+            const statusMsg = document.getElementById('form-status');
+            const button = form.querySelector('button');
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                // Disable button while sending
+                button.disabled = true;
+                button.textContent = 'Sending...';
+
+                emailjs.sendForm('service_eg_web_dev', 'template_reply', this)
+                    .then(() => {
+                        statusMsg.textContent = '✅ Message sent successfully!';
+                        statusMsg.className = 'form-status success';
+
+                        form.reset(); // clear form
+
+                        button.disabled = false;
+                        button.textContent = 'Submit';
+
+                        setTimeout(() => {
+                            statusMsg.textContent = '';
+                        }, 4000);
+                    })
+                    .catch((error) => {
+                        statusMsg.textContent = '❌ Failed to send message. Please try again.';
+                        statusMsg.className = 'form-status error';
+
+                        console.error('FAILED...', error);
+
+                        button.disabled = false;
+                        button.textContent = 'Submit';
+
+                        setTimeout(() => {
+                            statusMsg.textContent = '';
+                        }, 4000);
+                    });
+            });
+        }
+    </script>
+
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layouts.css">
     <link rel="stylesheet" href="styles/components.css">
@@ -102,25 +155,26 @@
 
                 <div class="contact-wrapper">
                     <div class="contact-form">
-                        <form action="https://formspree.io/f/mkoogwpo" method="POST">
+                        <form id="contact-form">
                             <div class="form-header">
                                 <h3>Submit Your Message</h3>
                                 <p>I typically respond within 24 hours</p>
                             </div>
                             <div class="form-element">
                                 <label for="name">Name<span class="form-important">*</span></label>
-                                <input type="text" id="name" name="name">
+                                <input type="text" id="name" name="name" required>
                             </div>
                             <div class="form-element">
                                 <label for="email">Email<span class="form-important">*</span></label>
-                                <input type="email" id="email" name="email">
+                                <input type="email" id="email" name="email" required>
                             </div>
                             <div class="form-element">
                                 <label for="message">Enter your message<span class="form-important">*</span></label>
-                                <textarea name="message" id="message"></textarea>
+                                <textarea name="message" id="message" required></textarea>
                             </div>
                             <p class="required-exlplanation"><span class="form-important">*</span>- required field</p>
                             <button type="submit" class="primary-btn">Submit</button>
+                            <p id="form-status" class="form-status"></p>
                         </form>
                     </div>
                     <div class="personal-details">
