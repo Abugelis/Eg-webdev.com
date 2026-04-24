@@ -123,6 +123,14 @@
     color: red;
 }
 
+.cf-turnstile {
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
 @media (min-width: 768px) {
     .contact-wrapper {
         display: grid;

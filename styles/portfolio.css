@@ -54,6 +54,10 @@
     text-align: center;
 }
 
+.final-cta .section-separator svg {
+        margin-bottom: -1px;
+    }
+
 @media (min-width: 1024px) {
 
     .classic-designs,
